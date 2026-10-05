@@ -1,0 +1,16 @@
+# Kimi K3 (Moonshot) via Together — HIGH reasoning.
+# K3's sampling params are FIXED server-side (Together docs: omit temperature/
+# top_p — unlike K2.5/K2.7, which set them). reasoning_effort in {low,high,max},
+# default max; passed via extra_body (Together rejects it as a top-level litellm
+# param, same as GLM-5.2 / K2.7). Verified 2026-08-09: raw probe with
+# reasoning_effort=low returned reasoning_content + completion cleanly.
+# max_tokens pinned at K3's native max output (roster convention: Claude/GPT sit
+# at their native 128K). Together accepted 1048576 on first probe — no hang, no
+# validation error (context_length metadata is 1,000,000; the cap is not
+# sum-validated against the prompt). litellm has no model_info for this model,
+# so max_tokens:null would raise.
+model: together_ai/moonshotai/Kimi-K3
+max_tokens: 1048576       # 1M output budget — K3 native max, probe-verified
+num_retries: 10
+extra_body:
+  reasoning_effort: high

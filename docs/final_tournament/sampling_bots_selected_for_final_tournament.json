@@ -1,0 +1,4493 @@
+{
+ "pool": "sh250-pool-5ac92bc7",
+ "per_model": 30,
+ "groups": {
+  "names": [
+   "1",
+   "2",
+   "3"
+  ],
+  "size": 10,
+  "rule": "consecutive tens of the listed selection"
+ },
+ "run_size": 50,
+ "chosen_run": {
+  "claude-fable-5-1-high": 2,
+  "claude-fable-5-high": 2,
+  "claude-opus-4-8-high": 0,
+  "claude-sonnet-5-high": 4,
+  "deepseek-v4-pro-thinking": 1,
+  "gemini-3-1-pro-high": 3,
+  "gemini-3-8-flash-high": 2,
+  "glm-5.2-high": 1,
+  "glm-5.3-high": 3,
+  "gpt-5.3-codex-high": 2,
+  "gpt-5.4": 4,
+  "gpt-5.5": 3,
+  "gpt-5.6-luna": 2,
+  "gpt-5.6-sol": 0,
+  "gpt-5.6-terra": 2,
+  "gpt-6-astra": 4,
+  "grok-4.20-reasoning": 0,
+  "grok-4.5-high": 2,
+  "grok-4.6-high": 4,
+  "kimi-k3-high": 0,
+  "qwen3.8-2.4t-a95b-thinking": 3
+ },
+ "seed": 9591746523970967871,
+ "selected_at": "2026-09-25 17:58 UTC",
+ "selection": {
+  "claude-fable-5-1-high": [
+   {
+    "slot": 100,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t100_c000",
+    "group": "1"
+   },
+   {
+    "slot": 104,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t104_c000",
+    "group": "1"
+   },
+   {
+    "slot": 105,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t105_c000",
+    "group": "1"
+   },
+   {
+    "slot": 106,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t106_c000",
+    "group": "1"
+   },
+   {
+    "slot": 107,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t107_c000",
+    "group": "1"
+   },
+   {
+    "slot": 109,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t109_c000",
+    "group": "1"
+   },
+   {
+    "slot": 111,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t111_c000",
+    "group": "1"
+   },
+   {
+    "slot": 113,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t113_c000",
+    "group": "1"
+   },
+   {
+    "slot": 114,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t114_c000",
+    "group": "1"
+   },
+   {
+    "slot": 115,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t115_c000",
+    "group": "1"
+   },
+   {
+    "slot": 117,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t117_c000",
+    "group": "2"
+   },
+   {
+    "slot": 118,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t118_c000",
+    "group": "2"
+   },
+   {
+    "slot": 120,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t120_c000",
+    "group": "2"
+   },
+   {
+    "slot": 122,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t122_c000",
+    "group": "2"
+   },
+   {
+    "slot": 125,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t125_c000",
+    "group": "2"
+   },
+   {
+    "slot": 126,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t126_c000",
+    "group": "2"
+   },
+   {
+    "slot": 127,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t127_c000",
+    "group": "2"
+   },
+   {
+    "slot": 128,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t128_c000",
+    "group": "2"
+   },
+   {
+    "slot": 130,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t130_c000",
+    "group": "2"
+   },
+   {
+    "slot": 132,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t132_c000",
+    "group": "2"
+   },
+   {
+    "slot": 135,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t135_c000",
+    "group": "3"
+   },
+   {
+    "slot": 136,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t136_c000",
+    "group": "3"
+   },
+   {
+    "slot": 137,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t137_c000",
+    "group": "3"
+   },
+   {
+    "slot": 138,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t138_c000",
+    "group": "3"
+   },
+   {
+    "slot": 142,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t142_c000",
+    "group": "3"
+   },
+   {
+    "slot": 144,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t144_c000",
+    "group": "3"
+   },
+   {
+    "slot": 145,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t145_c000",
+    "group": "3"
+   },
+   {
+    "slot": 146,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t146_c000",
+    "group": "3"
+   },
+   {
+    "slot": 147,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t147_c000",
+    "group": "3"
+   },
+   {
+    "slot": 148,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-1-high__t148_c000",
+    "group": "3"
+   }
+  ],
+  "claude-fable-5-high": [
+   {
+    "slot": 100,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t100_c000",
+    "group": "1"
+   },
+   {
+    "slot": 101,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t101_c000",
+    "group": "1"
+   },
+   {
+    "slot": 102,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t102_c000",
+    "group": "1"
+   },
+   {
+    "slot": 103,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t103_c000",
+    "group": "1"
+   },
+   {
+    "slot": 104,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t104_c000",
+    "group": "1"
+   },
+   {
+    "slot": 107,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t107_c000",
+    "group": "1"
+   },
+   {
+    "slot": 108,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t108_c000",
+    "group": "1"
+   },
+   {
+    "slot": 111,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t111_c000",
+    "group": "1"
+   },
+   {
+    "slot": 114,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t114_c000",
+    "group": "1"
+   },
+   {
+    "slot": 117,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t117_c000",
+    "group": "1"
+   },
+   {
+    "slot": 118,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t118_c000",
+    "group": "2"
+   },
+   {
+    "slot": 119,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t119_c000",
+    "group": "2"
+   },
+   {
+    "slot": 120,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t120_c000",
+    "group": "2"
+   },
+   {
+    "slot": 122,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t122_c000",
+    "group": "2"
+   },
+   {
+    "slot": 124,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t124_c000",
+    "group": "2"
+   },
+   {
+    "slot": 125,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t125_c000",
+    "group": "2"
+   },
+   {
+    "slot": 128,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t128_c000",
+    "group": "2"
+   },
+   {
+    "slot": 130,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t130_c000",
+    "group": "2"
+   },
+   {
+    "slot": 132,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t132_c000",
+    "group": "2"
+   },
+   {
+    "slot": 133,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t133_c000",
+    "group": "2"
+   },
+   {
+    "slot": 137,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t137_c000",
+    "group": "3"
+   },
+   {
+    "slot": 139,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t139_c000",
+    "group": "3"
+   },
+   {
+    "slot": 140,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t140_c000",
+    "group": "3"
+   },
+   {
+    "slot": 142,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t142_c000",
+    "group": "3"
+   },
+   {
+    "slot": 143,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t143_c000",
+    "group": "3"
+   },
+   {
+    "slot": 144,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t144_c000",
+    "group": "3"
+   },
+   {
+    "slot": 146,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t146_c000",
+    "group": "3"
+   },
+   {
+    "slot": 147,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t147_c000",
+    "group": "3"
+   },
+   {
+    "slot": 148,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t148_c000",
+    "group": "3"
+   },
+   {
+    "slot": 149,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "claude-fable-5-high__t149_c000",
+    "group": "3"
+   }
+  ],
+  "claude-opus-4-8-high": [
+   {
+    "slot": 0,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t00_c000",
+    "group": "1"
+   },
+   {
+    "slot": 2,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t02_c000",
+    "group": "1"
+   },
+   {
+    "slot": 3,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t03_c000",
+    "group": "1"
+   },
+   {
+    "slot": 4,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t04_c000",
+    "group": "1"
+   },
+   {
+    "slot": 5,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t05_c000",
+    "group": "1"
+   },
+   {
+    "slot": 7,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t07_c000",
+    "group": "1"
+   },
+   {
+    "slot": 9,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t09_c000",
+    "group": "1"
+   },
+   {
+    "slot": 10,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t10_c000",
+    "group": "1"
+   },
+   {
+    "slot": 13,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t13_c000",
+    "group": "1"
+   },
+   {
+    "slot": 14,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t14_c000",
+    "group": "1"
+   },
+   {
+    "slot": 17,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t17_c000",
+    "group": "2"
+   },
+   {
+    "slot": 19,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t19_c000",
+    "group": "2"
+   },
+   {
+    "slot": 20,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t20_c000",
+    "group": "2"
+   },
+   {
+    "slot": 21,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t21_c000",
+    "group": "2"
+   },
+   {
+    "slot": 24,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t24_c000",
+    "group": "2"
+   },
+   {
+    "slot": 25,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t25_c000",
+    "group": "2"
+   },
+   {
+    "slot": 26,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t26_c000",
+    "group": "2"
+   },
+   {
+    "slot": 29,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t29_c000",
+    "group": "2"
+   },
+   {
+    "slot": 30,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t30_c000",
+    "group": "2"
+   },
+   {
+    "slot": 31,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t31_c000",
+    "group": "2"
+   },
+   {
+    "slot": 33,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t33_c000",
+    "group": "3"
+   },
+   {
+    "slot": 35,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t35_c000",
+    "group": "3"
+   },
+   {
+    "slot": 37,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t37_c000",
+    "group": "3"
+   },
+   {
+    "slot": 40,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t40_c000",
+    "group": "3"
+   },
+   {
+    "slot": 41,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t41_c000",
+    "group": "3"
+   },
+   {
+    "slot": 43,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t43_c000",
+    "group": "3"
+   },
+   {
+    "slot": 44,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t44_c000",
+    "group": "3"
+   },
+   {
+    "slot": 45,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t45_c000",
+    "group": "3"
+   },
+   {
+    "slot": 46,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t46_c000",
+    "group": "3"
+   },
+   {
+    "slot": 47,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "claude-opus-4-8-high__t47_c000",
+    "group": "3"
+   }
+  ],
+  "claude-sonnet-5-high": [
+   {
+    "slot": 201,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t201_c000",
+    "group": "1"
+   },
+   {
+    "slot": 203,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t203_c000",
+    "group": "1"
+   },
+   {
+    "slot": 204,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t204_c000",
+    "group": "1"
+   },
+   {
+    "slot": 206,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t206_c000",
+    "group": "1"
+   },
+   {
+    "slot": 209,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t209_c000",
+    "group": "1"
+   },
+   {
+    "slot": 210,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t210_c000",
+    "group": "1"
+   },
+   {
+    "slot": 211,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t211_c000",
+    "group": "1"
+   },
+   {
+    "slot": 213,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t213_c000",
+    "group": "1"
+   },
+   {
+    "slot": 214,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t214_c000",
+    "group": "1"
+   },
+   {
+    "slot": 215,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t215_c000",
+    "group": "1"
+   },
+   {
+    "slot": 217,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t217_c000",
+    "group": "2"
+   },
+   {
+    "slot": 218,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t218_c000",
+    "group": "2"
+   },
+   {
+    "slot": 219,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t219_c000",
+    "group": "2"
+   },
+   {
+    "slot": 220,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t220_c000",
+    "group": "2"
+   },
+   {
+    "slot": 221,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t221_c000",
+    "group": "2"
+   },
+   {
+    "slot": 224,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t224_c000",
+    "group": "2"
+   },
+   {
+    "slot": 225,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t225_c000",
+    "group": "2"
+   },
+   {
+    "slot": 228,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t228_c000",
+    "group": "2"
+   },
+   {
+    "slot": 229,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t229_c000",
+    "group": "2"
+   },
+   {
+    "slot": 231,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t231_c000",
+    "group": "2"
+   },
+   {
+    "slot": 232,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t232_c000",
+    "group": "3"
+   },
+   {
+    "slot": 235,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t235_c000",
+    "group": "3"
+   },
+   {
+    "slot": 236,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t236_c000",
+    "group": "3"
+   },
+   {
+    "slot": 238,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t238_c000",
+    "group": "3"
+   },
+   {
+    "slot": 241,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t241_c000",
+    "group": "3"
+   },
+   {
+    "slot": 243,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t243_c000",
+    "group": "3"
+   },
+   {
+    "slot": 244,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t244_c000",
+    "group": "3"
+   },
+   {
+    "slot": 245,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t245_c000",
+    "group": "3"
+   },
+   {
+    "slot": 246,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t246_c000",
+    "group": "3"
+   },
+   {
+    "slot": 247,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "claude-sonnet-5-high__t247_c000",
+    "group": "3"
+   }
+  ],
+  "deepseek-v4-pro-thinking": [
+   {
+    "slot": 50,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t50_c000",
+    "group": "1"
+   },
+   {
+    "slot": 51,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t51_c000",
+    "group": "1"
+   },
+   {
+    "slot": 53,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t53_c000",
+    "group": "1"
+   },
+   {
+    "slot": 54,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t54_c000",
+    "group": "1"
+   },
+   {
+    "slot": 56,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t56_c000",
+    "group": "1"
+   },
+   {
+    "slot": 60,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t60_c000",
+    "group": "1"
+   },
+   {
+    "slot": 61,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t61_c000",
+    "group": "1"
+   },
+   {
+    "slot": 64,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t64_c000",
+    "group": "1"
+   },
+   {
+    "slot": 65,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t65_c000",
+    "group": "1"
+   },
+   {
+    "slot": 67,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t67_c000",
+    "group": "1"
+   },
+   {
+    "slot": 68,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t68_c000",
+    "group": "2"
+   },
+   {
+    "slot": 69,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t69_c000",
+    "group": "2"
+   },
+   {
+    "slot": 71,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t71_c000",
+    "group": "2"
+   },
+   {
+    "slot": 73,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t73_c000",
+    "group": "2"
+   },
+   {
+    "slot": 74,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t74_c000",
+    "group": "2"
+   },
+   {
+    "slot": 77,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t77_c000",
+    "group": "2"
+   },
+   {
+    "slot": 78,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t78_c000",
+    "group": "2"
+   },
+   {
+    "slot": 80,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t80_c000",
+    "group": "2"
+   },
+   {
+    "slot": 81,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t81_c000",
+    "group": "2"
+   },
+   {
+    "slot": 83,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t83_c000",
+    "group": "2"
+   },
+   {
+    "slot": 85,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t85_c000",
+    "group": "3"
+   },
+   {
+    "slot": 87,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t87_c000",
+    "group": "3"
+   },
+   {
+    "slot": 89,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t89_c000",
+    "group": "3"
+   },
+   {
+    "slot": 90,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t90_c000",
+    "group": "3"
+   },
+   {
+    "slot": 91,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t91_c000",
+    "group": "3"
+   },
+   {
+    "slot": 92,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t92_c000",
+    "group": "3"
+   },
+   {
+    "slot": 93,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t93_c000",
+    "group": "3"
+   },
+   {
+    "slot": 97,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t97_c000",
+    "group": "3"
+   },
+   {
+    "slot": 98,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t98_c000",
+    "group": "3"
+   },
+   {
+    "slot": 99,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "deepseek-v4-pro-thinking__t99_c000",
+    "group": "3"
+   }
+  ],
+  "gemini-3-1-pro-high": [
+   {
+    "slot": 150,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t150_c000",
+    "group": "1"
+   },
+   {
+    "slot": 151,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t151_c000",
+    "group": "1"
+   },
+   {
+    "slot": 153,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t153_c000",
+    "group": "1"
+   },
+   {
+    "slot": 155,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t155_c000",
+    "group": "1"
+   },
+   {
+    "slot": 156,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t156_c000",
+    "group": "1"
+   },
+   {
+    "slot": 158,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t158_c000",
+    "group": "1"
+   },
+   {
+    "slot": 160,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t160_c000",
+    "group": "1"
+   },
+   {
+    "slot": 161,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t161_c000",
+    "group": "1"
+   },
+   {
+    "slot": 163,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t163_c000",
+    "group": "1"
+   },
+   {
+    "slot": 165,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t165_c000",
+    "group": "1"
+   },
+   {
+    "slot": 166,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t166_c000",
+    "group": "2"
+   },
+   {
+    "slot": 167,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t167_c000",
+    "group": "2"
+   },
+   {
+    "slot": 168,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t168_c000",
+    "group": "2"
+   },
+   {
+    "slot": 172,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t172_c000",
+    "group": "2"
+   },
+   {
+    "slot": 173,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t173_c000",
+    "group": "2"
+   },
+   {
+    "slot": 174,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t174_c000",
+    "group": "2"
+   },
+   {
+    "slot": 175,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t175_c000",
+    "group": "2"
+   },
+   {
+    "slot": 179,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t179_c000",
+    "group": "2"
+   },
+   {
+    "slot": 181,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t181_c000",
+    "group": "2"
+   },
+   {
+    "slot": 183,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t183_c000",
+    "group": "2"
+   },
+   {
+    "slot": 188,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t188_c000",
+    "group": "3"
+   },
+   {
+    "slot": 189,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t189_c000",
+    "group": "3"
+   },
+   {
+    "slot": 190,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t190_c000",
+    "group": "3"
+   },
+   {
+    "slot": 192,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t192_c000",
+    "group": "3"
+   },
+   {
+    "slot": 193,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t193_c000",
+    "group": "3"
+   },
+   {
+    "slot": 194,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t194_c000",
+    "group": "3"
+   },
+   {
+    "slot": 195,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t195_c000",
+    "group": "3"
+   },
+   {
+    "slot": 196,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t196_c000",
+    "group": "3"
+   },
+   {
+    "slot": 197,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t197_c000",
+    "group": "3"
+   },
+   {
+    "slot": 199,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gemini-3-1-pro-high__t199_c000",
+    "group": "3"
+   }
+  ],
+  "gemini-3-8-flash-high": [
+   {
+    "slot": 100,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t100_c000",
+    "group": "1"
+   },
+   {
+    "slot": 101,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t101_c000",
+    "group": "1"
+   },
+   {
+    "slot": 102,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t102_c000",
+    "group": "1"
+   },
+   {
+    "slot": 104,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t104_c000",
+    "group": "1"
+   },
+   {
+    "slot": 105,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t105_c000",
+    "group": "1"
+   },
+   {
+    "slot": 106,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t106_c000",
+    "group": "1"
+   },
+   {
+    "slot": 107,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t107_c000",
+    "group": "1"
+   },
+   {
+    "slot": 108,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t108_c000",
+    "group": "1"
+   },
+   {
+    "slot": 109,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t109_c000",
+    "group": "1"
+   },
+   {
+    "slot": 113,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t113_c000",
+    "group": "1"
+   },
+   {
+    "slot": 114,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t114_c000",
+    "group": "2"
+   },
+   {
+    "slot": 116,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t116_c000",
+    "group": "2"
+   },
+   {
+    "slot": 118,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t118_c000",
+    "group": "2"
+   },
+   {
+    "slot": 119,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t119_c000",
+    "group": "2"
+   },
+   {
+    "slot": 122,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t122_c000",
+    "group": "2"
+   },
+   {
+    "slot": 123,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t123_c000",
+    "group": "2"
+   },
+   {
+    "slot": 125,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t125_c000",
+    "group": "2"
+   },
+   {
+    "slot": 127,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t127_c000",
+    "group": "2"
+   },
+   {
+    "slot": 128,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t128_c000",
+    "group": "2"
+   },
+   {
+    "slot": 129,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t129_c000",
+    "group": "2"
+   },
+   {
+    "slot": 130,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t130_c000",
+    "group": "3"
+   },
+   {
+    "slot": 131,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t131_c000",
+    "group": "3"
+   },
+   {
+    "slot": 135,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t135_c000",
+    "group": "3"
+   },
+   {
+    "slot": 136,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t136_c000",
+    "group": "3"
+   },
+   {
+    "slot": 137,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t137_c000",
+    "group": "3"
+   },
+   {
+    "slot": 139,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t139_c000",
+    "group": "3"
+   },
+   {
+    "slot": 141,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t141_c000",
+    "group": "3"
+   },
+   {
+    "slot": 142,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t142_c000",
+    "group": "3"
+   },
+   {
+    "slot": 145,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t145_c000",
+    "group": "3"
+   },
+   {
+    "slot": 147,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gemini-3-8-flash-high__t147_c000",
+    "group": "3"
+   }
+  ],
+  "glm-5.2-high": [
+   {
+    "slot": 51,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t51_c000",
+    "group": "1"
+   },
+   {
+    "slot": 52,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t52_c000",
+    "group": "1"
+   },
+   {
+    "slot": 54,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t54_c000",
+    "group": "1"
+   },
+   {
+    "slot": 55,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t55_c000",
+    "group": "1"
+   },
+   {
+    "slot": 58,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t58_c000",
+    "group": "1"
+   },
+   {
+    "slot": 59,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t59_c000",
+    "group": "1"
+   },
+   {
+    "slot": 60,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t60_c000",
+    "group": "1"
+   },
+   {
+    "slot": 62,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t62_c000",
+    "group": "1"
+   },
+   {
+    "slot": 67,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t67_c000",
+    "group": "1"
+   },
+   {
+    "slot": 69,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t69_c000",
+    "group": "1"
+   },
+   {
+    "slot": 70,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t70_c000",
+    "group": "2"
+   },
+   {
+    "slot": 74,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t74_c000",
+    "group": "2"
+   },
+   {
+    "slot": 75,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t75_c000",
+    "group": "2"
+   },
+   {
+    "slot": 76,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t76_c000",
+    "group": "2"
+   },
+   {
+    "slot": 77,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t77_c000",
+    "group": "2"
+   },
+   {
+    "slot": 78,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t78_c000",
+    "group": "2"
+   },
+   {
+    "slot": 79,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t79_c000",
+    "group": "2"
+   },
+   {
+    "slot": 83,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t83_c000",
+    "group": "2"
+   },
+   {
+    "slot": 84,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t84_c000",
+    "group": "2"
+   },
+   {
+    "slot": 85,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t85_c000",
+    "group": "2"
+   },
+   {
+    "slot": 86,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t86_c000",
+    "group": "3"
+   },
+   {
+    "slot": 87,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t87_c000",
+    "group": "3"
+   },
+   {
+    "slot": 89,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t89_c000",
+    "group": "3"
+   },
+   {
+    "slot": 90,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t90_c000",
+    "group": "3"
+   },
+   {
+    "slot": 92,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t92_c000",
+    "group": "3"
+   },
+   {
+    "slot": 93,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t93_c000",
+    "group": "3"
+   },
+   {
+    "slot": 94,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t94_c000",
+    "group": "3"
+   },
+   {
+    "slot": 95,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t95_c000",
+    "group": "3"
+   },
+   {
+    "slot": 98,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t98_c000",
+    "group": "3"
+   },
+   {
+    "slot": 99,
+    "run": 1,
+    "run_slots": "050-099",
+    "artifact_id": "glm-5.2-high__t99_c000",
+    "group": "3"
+   }
+  ],
+  "glm-5.3-high": [
+   {
+    "slot": 150,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t150_c000",
+    "group": "1"
+   },
+   {
+    "slot": 151,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t151_c000",
+    "group": "1"
+   },
+   {
+    "slot": 152,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t152_c000",
+    "group": "1"
+   },
+   {
+    "slot": 153,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t153_c000",
+    "group": "1"
+   },
+   {
+    "slot": 155,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t155_c000",
+    "group": "1"
+   },
+   {
+    "slot": 156,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t156_c000",
+    "group": "1"
+   },
+   {
+    "slot": 158,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t158_c000",
+    "group": "1"
+   },
+   {
+    "slot": 162,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t162_c000",
+    "group": "1"
+   },
+   {
+    "slot": 163,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t163_c000",
+    "group": "1"
+   },
+   {
+    "slot": 165,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t165_c000",
+    "group": "1"
+   },
+   {
+    "slot": 166,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t166_c000",
+    "group": "2"
+   },
+   {
+    "slot": 167,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t167_c000",
+    "group": "2"
+   },
+   {
+    "slot": 168,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t168_c000",
+    "group": "2"
+   },
+   {
+    "slot": 171,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t171_c000",
+    "group": "2"
+   },
+   {
+    "slot": 173,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t173_c000",
+    "group": "2"
+   },
+   {
+    "slot": 174,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t174_c000",
+    "group": "2"
+   },
+   {
+    "slot": 176,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t176_c000",
+    "group": "2"
+   },
+   {
+    "slot": 177,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t177_c000",
+    "group": "2"
+   },
+   {
+    "slot": 178,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t178_c000",
+    "group": "2"
+   },
+   {
+    "slot": 179,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t179_c000",
+    "group": "2"
+   },
+   {
+    "slot": 182,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t182_c000",
+    "group": "3"
+   },
+   {
+    "slot": 183,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t183_c000",
+    "group": "3"
+   },
+   {
+    "slot": 185,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t185_c000",
+    "group": "3"
+   },
+   {
+    "slot": 187,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t187_c000",
+    "group": "3"
+   },
+   {
+    "slot": 188,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t188_c000",
+    "group": "3"
+   },
+   {
+    "slot": 189,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t189_c000",
+    "group": "3"
+   },
+   {
+    "slot": 190,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t190_c000",
+    "group": "3"
+   },
+   {
+    "slot": 192,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t192_c000",
+    "group": "3"
+   },
+   {
+    "slot": 196,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t196_c000",
+    "group": "3"
+   },
+   {
+    "slot": 199,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "glm-5.3-high__t199_c000",
+    "group": "3"
+   }
+  ],
+  "gpt-5.3-codex-high": [
+   {
+    "slot": 100,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t100_c000",
+    "group": "1"
+   },
+   {
+    "slot": 103,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t103_c000",
+    "group": "1"
+   },
+   {
+    "slot": 105,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t105_c000",
+    "group": "1"
+   },
+   {
+    "slot": 107,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t107_c000",
+    "group": "1"
+   },
+   {
+    "slot": 108,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t108_c000",
+    "group": "1"
+   },
+   {
+    "slot": 110,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t110_c000",
+    "group": "1"
+   },
+   {
+    "slot": 111,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t111_c000",
+    "group": "1"
+   },
+   {
+    "slot": 112,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t112_c000",
+    "group": "1"
+   },
+   {
+    "slot": 113,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t113_c000",
+    "group": "1"
+   },
+   {
+    "slot": 115,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t115_c000",
+    "group": "1"
+   },
+   {
+    "slot": 118,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t118_c000",
+    "group": "2"
+   },
+   {
+    "slot": 119,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t119_c000",
+    "group": "2"
+   },
+   {
+    "slot": 120,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t120_c000",
+    "group": "2"
+   },
+   {
+    "slot": 121,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t121_c000",
+    "group": "2"
+   },
+   {
+    "slot": 122,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t122_c000",
+    "group": "2"
+   },
+   {
+    "slot": 124,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t124_c000",
+    "group": "2"
+   },
+   {
+    "slot": 126,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t126_c000",
+    "group": "2"
+   },
+   {
+    "slot": 127,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t127_c000",
+    "group": "2"
+   },
+   {
+    "slot": 128,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t128_c000",
+    "group": "2"
+   },
+   {
+    "slot": 131,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t131_c000",
+    "group": "2"
+   },
+   {
+    "slot": 134,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t134_c000",
+    "group": "3"
+   },
+   {
+    "slot": 136,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t136_c000",
+    "group": "3"
+   },
+   {
+    "slot": 138,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t138_c000",
+    "group": "3"
+   },
+   {
+    "slot": 139,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t139_c000",
+    "group": "3"
+   },
+   {
+    "slot": 142,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t142_c000",
+    "group": "3"
+   },
+   {
+    "slot": 143,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t143_c000",
+    "group": "3"
+   },
+   {
+    "slot": 145,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t145_c000",
+    "group": "3"
+   },
+   {
+    "slot": 146,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t146_c000",
+    "group": "3"
+   },
+   {
+    "slot": 147,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t147_c000",
+    "group": "3"
+   },
+   {
+    "slot": 149,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.3-codex-high__t149_c000",
+    "group": "3"
+   }
+  ],
+  "gpt-5.4": [
+   {
+    "slot": 200,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t200_c000",
+    "group": "1"
+   },
+   {
+    "slot": 201,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t201_c000",
+    "group": "1"
+   },
+   {
+    "slot": 202,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t202_c000",
+    "group": "1"
+   },
+   {
+    "slot": 205,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t205_c000",
+    "group": "1"
+   },
+   {
+    "slot": 210,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t210_c000",
+    "group": "1"
+   },
+   {
+    "slot": 211,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t211_c000",
+    "group": "1"
+   },
+   {
+    "slot": 213,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t213_c000",
+    "group": "1"
+   },
+   {
+    "slot": 216,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t216_c000",
+    "group": "1"
+   },
+   {
+    "slot": 218,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t218_c000",
+    "group": "1"
+   },
+   {
+    "slot": 219,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t219_c000",
+    "group": "1"
+   },
+   {
+    "slot": 220,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t220_c000",
+    "group": "2"
+   },
+   {
+    "slot": 222,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t222_c000",
+    "group": "2"
+   },
+   {
+    "slot": 224,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t224_c000",
+    "group": "2"
+   },
+   {
+    "slot": 225,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t225_c000",
+    "group": "2"
+   },
+   {
+    "slot": 226,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t226_c000",
+    "group": "2"
+   },
+   {
+    "slot": 227,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t227_c000",
+    "group": "2"
+   },
+   {
+    "slot": 228,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t228_c000",
+    "group": "2"
+   },
+   {
+    "slot": 230,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t230_c000",
+    "group": "2"
+   },
+   {
+    "slot": 232,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t232_c000",
+    "group": "2"
+   },
+   {
+    "slot": 233,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t233_c000",
+    "group": "2"
+   },
+   {
+    "slot": 234,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t234_c000",
+    "group": "3"
+   },
+   {
+    "slot": 236,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t236_c000",
+    "group": "3"
+   },
+   {
+    "slot": 237,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t237_c000",
+    "group": "3"
+   },
+   {
+    "slot": 239,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t239_c000",
+    "group": "3"
+   },
+   {
+    "slot": 242,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t242_c000",
+    "group": "3"
+   },
+   {
+    "slot": 243,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t243_c000",
+    "group": "3"
+   },
+   {
+    "slot": 244,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t244_c000",
+    "group": "3"
+   },
+   {
+    "slot": 246,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t246_c000",
+    "group": "3"
+   },
+   {
+    "slot": 247,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t247_c000",
+    "group": "3"
+   },
+   {
+    "slot": 248,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-5.4__t248_c000",
+    "group": "3"
+   }
+  ],
+  "gpt-5.5": [
+   {
+    "slot": 150,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t150_c000",
+    "group": "1"
+   },
+   {
+    "slot": 151,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t151_c000",
+    "group": "1"
+   },
+   {
+    "slot": 152,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t152_c000",
+    "group": "1"
+   },
+   {
+    "slot": 154,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t154_c000",
+    "group": "1"
+   },
+   {
+    "slot": 156,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t156_c000",
+    "group": "1"
+   },
+   {
+    "slot": 157,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t157_c000",
+    "group": "1"
+   },
+   {
+    "slot": 158,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t158_c000",
+    "group": "1"
+   },
+   {
+    "slot": 160,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t160_c000",
+    "group": "1"
+   },
+   {
+    "slot": 162,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t162_c000",
+    "group": "1"
+   },
+   {
+    "slot": 165,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t165_c000",
+    "group": "1"
+   },
+   {
+    "slot": 166,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t166_c000",
+    "group": "2"
+   },
+   {
+    "slot": 168,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t168_c000",
+    "group": "2"
+   },
+   {
+    "slot": 169,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t169_c000",
+    "group": "2"
+   },
+   {
+    "slot": 170,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t170_c000",
+    "group": "2"
+   },
+   {
+    "slot": 172,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t172_c000",
+    "group": "2"
+   },
+   {
+    "slot": 176,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t176_c000",
+    "group": "2"
+   },
+   {
+    "slot": 179,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t179_c000",
+    "group": "2"
+   },
+   {
+    "slot": 181,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t181_c000",
+    "group": "2"
+   },
+   {
+    "slot": 182,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t182_c000",
+    "group": "2"
+   },
+   {
+    "slot": 184,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t184_c000",
+    "group": "2"
+   },
+   {
+    "slot": 185,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t185_c000",
+    "group": "3"
+   },
+   {
+    "slot": 187,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t187_c000",
+    "group": "3"
+   },
+   {
+    "slot": 188,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t188_c000",
+    "group": "3"
+   },
+   {
+    "slot": 189,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t189_c000",
+    "group": "3"
+   },
+   {
+    "slot": 191,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t191_c000",
+    "group": "3"
+   },
+   {
+    "slot": 192,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t192_c000",
+    "group": "3"
+   },
+   {
+    "slot": 193,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t193_c000",
+    "group": "3"
+   },
+   {
+    "slot": 194,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t194_c000",
+    "group": "3"
+   },
+   {
+    "slot": 196,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t196_c000",
+    "group": "3"
+   },
+   {
+    "slot": 197,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "gpt-5.5__t197_c000",
+    "group": "3"
+   }
+  ],
+  "gpt-5.6-luna": [
+   {
+    "slot": 103,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t103_c000",
+    "group": "1"
+   },
+   {
+    "slot": 104,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t104_c000",
+    "group": "1"
+   },
+   {
+    "slot": 106,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t106_c000",
+    "group": "1"
+   },
+   {
+    "slot": 113,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t113_c000",
+    "group": "1"
+   },
+   {
+    "slot": 114,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t114_c000",
+    "group": "1"
+   },
+   {
+    "slot": 117,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t117_c000",
+    "group": "1"
+   },
+   {
+    "slot": 118,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t118_c000",
+    "group": "1"
+   },
+   {
+    "slot": 119,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t119_c000",
+    "group": "1"
+   },
+   {
+    "slot": 120,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t120_c000",
+    "group": "1"
+   },
+   {
+    "slot": 121,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t121_c000",
+    "group": "1"
+   },
+   {
+    "slot": 122,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t122_c000",
+    "group": "2"
+   },
+   {
+    "slot": 123,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t123_c000",
+    "group": "2"
+   },
+   {
+    "slot": 124,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t124_c000",
+    "group": "2"
+   },
+   {
+    "slot": 128,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t128_c000",
+    "group": "2"
+   },
+   {
+    "slot": 129,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t129_c000",
+    "group": "2"
+   },
+   {
+    "slot": 130,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t130_c000",
+    "group": "2"
+   },
+   {
+    "slot": 131,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t131_c000",
+    "group": "2"
+   },
+   {
+    "slot": 132,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t132_c000",
+    "group": "2"
+   },
+   {
+    "slot": 133,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t133_c000",
+    "group": "2"
+   },
+   {
+    "slot": 134,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t134_c000",
+    "group": "2"
+   },
+   {
+    "slot": 135,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t135_c000",
+    "group": "3"
+   },
+   {
+    "slot": 136,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t136_c000",
+    "group": "3"
+   },
+   {
+    "slot": 138,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t138_c000",
+    "group": "3"
+   },
+   {
+    "slot": 140,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t140_c000",
+    "group": "3"
+   },
+   {
+    "slot": 142,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t142_c000",
+    "group": "3"
+   },
+   {
+    "slot": 143,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t143_c000",
+    "group": "3"
+   },
+   {
+    "slot": 144,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t144_c000",
+    "group": "3"
+   },
+   {
+    "slot": 145,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t145_c000",
+    "group": "3"
+   },
+   {
+    "slot": 146,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t146_c000",
+    "group": "3"
+   },
+   {
+    "slot": 147,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-luna__t147_c000",
+    "group": "3"
+   }
+  ],
+  "gpt-5.6-sol": [
+   {
+    "slot": 0,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t00_c000",
+    "group": "1"
+   },
+   {
+    "slot": 1,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t01_c000",
+    "group": "1"
+   },
+   {
+    "slot": 3,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t03_c000",
+    "group": "1"
+   },
+   {
+    "slot": 5,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t05_c000",
+    "group": "1"
+   },
+   {
+    "slot": 7,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t07_c000",
+    "group": "1"
+   },
+   {
+    "slot": 12,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t12_c000",
+    "group": "1"
+   },
+   {
+    "slot": 13,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t13_c000",
+    "group": "1"
+   },
+   {
+    "slot": 15,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t15_c000",
+    "group": "1"
+   },
+   {
+    "slot": 16,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t16_c000",
+    "group": "1"
+   },
+   {
+    "slot": 18,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t18_c000",
+    "group": "1"
+   },
+   {
+    "slot": 19,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t19_c000",
+    "group": "2"
+   },
+   {
+    "slot": 20,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t20_c000",
+    "group": "2"
+   },
+   {
+    "slot": 22,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t22_c000",
+    "group": "2"
+   },
+   {
+    "slot": 23,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t23_c000",
+    "group": "2"
+   },
+   {
+    "slot": 24,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t24_c000",
+    "group": "2"
+   },
+   {
+    "slot": 26,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t26_c000",
+    "group": "2"
+   },
+   {
+    "slot": 27,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t27_c000",
+    "group": "2"
+   },
+   {
+    "slot": 29,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t29_c000",
+    "group": "2"
+   },
+   {
+    "slot": 30,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t30_c000",
+    "group": "2"
+   },
+   {
+    "slot": 31,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t31_c000",
+    "group": "2"
+   },
+   {
+    "slot": 33,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t33_c000",
+    "group": "3"
+   },
+   {
+    "slot": 36,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t36_c000",
+    "group": "3"
+   },
+   {
+    "slot": 38,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t38_c000",
+    "group": "3"
+   },
+   {
+    "slot": 39,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t39_c000",
+    "group": "3"
+   },
+   {
+    "slot": 41,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t41_c000",
+    "group": "3"
+   },
+   {
+    "slot": 42,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t42_c000",
+    "group": "3"
+   },
+   {
+    "slot": 43,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t43_c000",
+    "group": "3"
+   },
+   {
+    "slot": 44,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t44_c000",
+    "group": "3"
+   },
+   {
+    "slot": 46,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t46_c000",
+    "group": "3"
+   },
+   {
+    "slot": 48,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "gpt-5.6-sol__t48_c000",
+    "group": "3"
+   }
+  ],
+  "gpt-5.6-terra": [
+   {
+    "slot": 101,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t101_c000",
+    "group": "1"
+   },
+   {
+    "slot": 102,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t102_c000",
+    "group": "1"
+   },
+   {
+    "slot": 104,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t104_c000",
+    "group": "1"
+   },
+   {
+    "slot": 106,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t106_c000",
+    "group": "1"
+   },
+   {
+    "slot": 107,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t107_c000",
+    "group": "1"
+   },
+   {
+    "slot": 108,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t108_c000",
+    "group": "1"
+   },
+   {
+    "slot": 112,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t112_c000",
+    "group": "1"
+   },
+   {
+    "slot": 113,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t113_c000",
+    "group": "1"
+   },
+   {
+    "slot": 115,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t115_c000",
+    "group": "1"
+   },
+   {
+    "slot": 116,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t116_c000",
+    "group": "1"
+   },
+   {
+    "slot": 117,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t117_c000",
+    "group": "2"
+   },
+   {
+    "slot": 118,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t118_c000",
+    "group": "2"
+   },
+   {
+    "slot": 120,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t120_c000",
+    "group": "2"
+   },
+   {
+    "slot": 123,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t123_c000",
+    "group": "2"
+   },
+   {
+    "slot": 124,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t124_c000",
+    "group": "2"
+   },
+   {
+    "slot": 125,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t125_c000",
+    "group": "2"
+   },
+   {
+    "slot": 126,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t126_c000",
+    "group": "2"
+   },
+   {
+    "slot": 127,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t127_c000",
+    "group": "2"
+   },
+   {
+    "slot": 129,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t129_c000",
+    "group": "2"
+   },
+   {
+    "slot": 130,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t130_c000",
+    "group": "2"
+   },
+   {
+    "slot": 132,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t132_c000",
+    "group": "3"
+   },
+   {
+    "slot": 133,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t133_c000",
+    "group": "3"
+   },
+   {
+    "slot": 134,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t134_c000",
+    "group": "3"
+   },
+   {
+    "slot": 135,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t135_c000",
+    "group": "3"
+   },
+   {
+    "slot": 140,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t140_c000",
+    "group": "3"
+   },
+   {
+    "slot": 141,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t141_c000",
+    "group": "3"
+   },
+   {
+    "slot": 142,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t142_c000",
+    "group": "3"
+   },
+   {
+    "slot": 143,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t143_c000",
+    "group": "3"
+   },
+   {
+    "slot": 146,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t146_c000",
+    "group": "3"
+   },
+   {
+    "slot": 149,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "gpt-5.6-terra__t149_c000",
+    "group": "3"
+   }
+  ],
+  "gpt-6-astra": [
+   {
+    "slot": 202,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t202_c000",
+    "group": "1"
+   },
+   {
+    "slot": 204,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t204_c000",
+    "group": "1"
+   },
+   {
+    "slot": 205,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t205_c000",
+    "group": "1"
+   },
+   {
+    "slot": 207,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t207_c000",
+    "group": "1"
+   },
+   {
+    "slot": 210,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t210_c000",
+    "group": "1"
+   },
+   {
+    "slot": 212,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t212_c000",
+    "group": "1"
+   },
+   {
+    "slot": 213,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t213_c000",
+    "group": "1"
+   },
+   {
+    "slot": 215,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t215_c000",
+    "group": "1"
+   },
+   {
+    "slot": 220,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t220_c000",
+    "group": "1"
+   },
+   {
+    "slot": 221,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t221_c000",
+    "group": "1"
+   },
+   {
+    "slot": 222,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t222_c000",
+    "group": "2"
+   },
+   {
+    "slot": 223,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t223_c000",
+    "group": "2"
+   },
+   {
+    "slot": 224,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t224_c000",
+    "group": "2"
+   },
+   {
+    "slot": 226,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t226_c000",
+    "group": "2"
+   },
+   {
+    "slot": 227,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t227_c000",
+    "group": "2"
+   },
+   {
+    "slot": 228,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t228_c000",
+    "group": "2"
+   },
+   {
+    "slot": 229,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t229_c000",
+    "group": "2"
+   },
+   {
+    "slot": 230,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t230_c000",
+    "group": "2"
+   },
+   {
+    "slot": 233,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t233_c000",
+    "group": "2"
+   },
+   {
+    "slot": 236,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t236_c000",
+    "group": "2"
+   },
+   {
+    "slot": 237,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t237_c000",
+    "group": "3"
+   },
+   {
+    "slot": 238,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t238_c000",
+    "group": "3"
+   },
+   {
+    "slot": 239,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t239_c000",
+    "group": "3"
+   },
+   {
+    "slot": 241,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t241_c000",
+    "group": "3"
+   },
+   {
+    "slot": 242,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t242_c000",
+    "group": "3"
+   },
+   {
+    "slot": 243,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t243_c000",
+    "group": "3"
+   },
+   {
+    "slot": 244,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t244_c000",
+    "group": "3"
+   },
+   {
+    "slot": 245,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t245_c000",
+    "group": "3"
+   },
+   {
+    "slot": 246,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t246_c000",
+    "group": "3"
+   },
+   {
+    "slot": 247,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "gpt-6-astra__t247_c000",
+    "group": "3"
+   }
+  ],
+  "grok-4.20-reasoning": [
+   {
+    "slot": 1,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t01_c000",
+    "group": "1"
+   },
+   {
+    "slot": 3,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t03_c000",
+    "group": "1"
+   },
+   {
+    "slot": 4,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t04_c000",
+    "group": "1"
+   },
+   {
+    "slot": 5,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t05_c000",
+    "group": "1"
+   },
+   {
+    "slot": 6,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t06_c000",
+    "group": "1"
+   },
+   {
+    "slot": 7,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t07_c000",
+    "group": "1"
+   },
+   {
+    "slot": 11,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t11_c000",
+    "group": "1"
+   },
+   {
+    "slot": 13,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t13_c000",
+    "group": "1"
+   },
+   {
+    "slot": 14,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t14_c000",
+    "group": "1"
+   },
+   {
+    "slot": 15,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t15_c000",
+    "group": "1"
+   },
+   {
+    "slot": 16,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t16_c000",
+    "group": "2"
+   },
+   {
+    "slot": 17,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t17_c000",
+    "group": "2"
+   },
+   {
+    "slot": 18,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t18_c000",
+    "group": "2"
+   },
+   {
+    "slot": 19,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t19_c000",
+    "group": "2"
+   },
+   {
+    "slot": 21,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t21_c000",
+    "group": "2"
+   },
+   {
+    "slot": 22,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t22_c000",
+    "group": "2"
+   },
+   {
+    "slot": 25,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t25_c000",
+    "group": "2"
+   },
+   {
+    "slot": 26,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t26_c000",
+    "group": "2"
+   },
+   {
+    "slot": 29,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t29_c000",
+    "group": "2"
+   },
+   {
+    "slot": 31,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t31_c000",
+    "group": "2"
+   },
+   {
+    "slot": 32,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t32_c000",
+    "group": "3"
+   },
+   {
+    "slot": 37,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t37_c000",
+    "group": "3"
+   },
+   {
+    "slot": 38,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t38_c000",
+    "group": "3"
+   },
+   {
+    "slot": 40,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t40_c000",
+    "group": "3"
+   },
+   {
+    "slot": 41,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t41_c000",
+    "group": "3"
+   },
+   {
+    "slot": 42,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t42_c000",
+    "group": "3"
+   },
+   {
+    "slot": 43,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t43_c000",
+    "group": "3"
+   },
+   {
+    "slot": 45,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t45_c000",
+    "group": "3"
+   },
+   {
+    "slot": 46,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t46_c000",
+    "group": "3"
+   },
+   {
+    "slot": 49,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "grok-4.20-reasoning__t49_c000",
+    "group": "3"
+   }
+  ],
+  "grok-4.5-high": [
+   {
+    "slot": 101,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t101_c000",
+    "group": "1"
+   },
+   {
+    "slot": 105,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t105_c000",
+    "group": "1"
+   },
+   {
+    "slot": 106,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t106_c000",
+    "group": "1"
+   },
+   {
+    "slot": 107,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t107_c000",
+    "group": "1"
+   },
+   {
+    "slot": 108,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t108_c000",
+    "group": "1"
+   },
+   {
+    "slot": 110,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t110_c000",
+    "group": "1"
+   },
+   {
+    "slot": 113,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t113_c000",
+    "group": "1"
+   },
+   {
+    "slot": 114,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t114_c000",
+    "group": "1"
+   },
+   {
+    "slot": 115,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t115_c000",
+    "group": "1"
+   },
+   {
+    "slot": 116,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t116_c000",
+    "group": "1"
+   },
+   {
+    "slot": 117,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t117_c000",
+    "group": "2"
+   },
+   {
+    "slot": 118,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t118_c000",
+    "group": "2"
+   },
+   {
+    "slot": 119,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t119_c000",
+    "group": "2"
+   },
+   {
+    "slot": 122,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t122_c000",
+    "group": "2"
+   },
+   {
+    "slot": 123,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t123_c000",
+    "group": "2"
+   },
+   {
+    "slot": 127,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t127_c000",
+    "group": "2"
+   },
+   {
+    "slot": 128,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t128_c000",
+    "group": "2"
+   },
+   {
+    "slot": 129,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t129_c000",
+    "group": "2"
+   },
+   {
+    "slot": 131,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t131_c000",
+    "group": "2"
+   },
+   {
+    "slot": 132,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t132_c000",
+    "group": "2"
+   },
+   {
+    "slot": 133,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t133_c000",
+    "group": "3"
+   },
+   {
+    "slot": 136,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t136_c000",
+    "group": "3"
+   },
+   {
+    "slot": 137,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t137_c000",
+    "group": "3"
+   },
+   {
+    "slot": 138,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t138_c000",
+    "group": "3"
+   },
+   {
+    "slot": 139,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t139_c000",
+    "group": "3"
+   },
+   {
+    "slot": 142,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t142_c000",
+    "group": "3"
+   },
+   {
+    "slot": 145,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t145_c000",
+    "group": "3"
+   },
+   {
+    "slot": 146,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t146_c000",
+    "group": "3"
+   },
+   {
+    "slot": 148,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t148_c000",
+    "group": "3"
+   },
+   {
+    "slot": 149,
+    "run": 2,
+    "run_slots": "100-149",
+    "artifact_id": "grok-4.5-high__t149_c000",
+    "group": "3"
+   }
+  ],
+  "grok-4.6-high": [
+   {
+    "slot": 200,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t200_c000",
+    "group": "1"
+   },
+   {
+    "slot": 201,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t201_c000",
+    "group": "1"
+   },
+   {
+    "slot": 202,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t202_c000",
+    "group": "1"
+   },
+   {
+    "slot": 203,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t203_c000",
+    "group": "1"
+   },
+   {
+    "slot": 204,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t204_c000",
+    "group": "1"
+   },
+   {
+    "slot": 205,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t205_c000",
+    "group": "1"
+   },
+   {
+    "slot": 209,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t209_c000",
+    "group": "1"
+   },
+   {
+    "slot": 213,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t213_c000",
+    "group": "1"
+   },
+   {
+    "slot": 215,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t215_c000",
+    "group": "1"
+   },
+   {
+    "slot": 216,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t216_c000",
+    "group": "1"
+   },
+   {
+    "slot": 219,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t219_c000",
+    "group": "2"
+   },
+   {
+    "slot": 221,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t221_c000",
+    "group": "2"
+   },
+   {
+    "slot": 223,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t223_c000",
+    "group": "2"
+   },
+   {
+    "slot": 225,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t225_c000",
+    "group": "2"
+   },
+   {
+    "slot": 226,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t226_c000",
+    "group": "2"
+   },
+   {
+    "slot": 227,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t227_c000",
+    "group": "2"
+   },
+   {
+    "slot": 229,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t229_c000",
+    "group": "2"
+   },
+   {
+    "slot": 231,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t231_c000",
+    "group": "2"
+   },
+   {
+    "slot": 232,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t232_c000",
+    "group": "2"
+   },
+   {
+    "slot": 233,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t233_c000",
+    "group": "2"
+   },
+   {
+    "slot": 234,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t234_c000",
+    "group": "3"
+   },
+   {
+    "slot": 236,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t236_c000",
+    "group": "3"
+   },
+   {
+    "slot": 237,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t237_c000",
+    "group": "3"
+   },
+   {
+    "slot": 238,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t238_c000",
+    "group": "3"
+   },
+   {
+    "slot": 239,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t239_c000",
+    "group": "3"
+   },
+   {
+    "slot": 240,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t240_c000",
+    "group": "3"
+   },
+   {
+    "slot": 242,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t242_c000",
+    "group": "3"
+   },
+   {
+    "slot": 243,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t243_c000",
+    "group": "3"
+   },
+   {
+    "slot": 246,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t246_c000",
+    "group": "3"
+   },
+   {
+    "slot": 248,
+    "run": 4,
+    "run_slots": "200-249",
+    "artifact_id": "grok-4.6-high__t248_c000",
+    "group": "3"
+   }
+  ],
+  "kimi-k3-high": [
+   {
+    "slot": 1,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t01_c000",
+    "group": "1"
+   },
+   {
+    "slot": 5,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t05_c000",
+    "group": "1"
+   },
+   {
+    "slot": 7,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t07_c000",
+    "group": "1"
+   },
+   {
+    "slot": 8,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t08_c000",
+    "group": "1"
+   },
+   {
+    "slot": 9,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t09_c000",
+    "group": "1"
+   },
+   {
+    "slot": 13,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t13_c000",
+    "group": "1"
+   },
+   {
+    "slot": 14,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t14_c000",
+    "group": "1"
+   },
+   {
+    "slot": 15,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t15_c000",
+    "group": "1"
+   },
+   {
+    "slot": 16,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t16_c000",
+    "group": "1"
+   },
+   {
+    "slot": 19,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t19_c000",
+    "group": "1"
+   },
+   {
+    "slot": 20,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t20_c000",
+    "group": "2"
+   },
+   {
+    "slot": 21,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t21_c000",
+    "group": "2"
+   },
+   {
+    "slot": 22,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t22_c000",
+    "group": "2"
+   },
+   {
+    "slot": 23,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t23_c000",
+    "group": "2"
+   },
+   {
+    "slot": 25,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t25_c000",
+    "group": "2"
+   },
+   {
+    "slot": 26,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t26_c000",
+    "group": "2"
+   },
+   {
+    "slot": 27,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t27_c000",
+    "group": "2"
+   },
+   {
+    "slot": 32,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t32_c000",
+    "group": "2"
+   },
+   {
+    "slot": 33,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t33_c000",
+    "group": "2"
+   },
+   {
+    "slot": 34,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t34_c000",
+    "group": "2"
+   },
+   {
+    "slot": 37,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t37_c000",
+    "group": "3"
+   },
+   {
+    "slot": 38,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t38_c000",
+    "group": "3"
+   },
+   {
+    "slot": 39,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t39_c000",
+    "group": "3"
+   },
+   {
+    "slot": 42,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t42_c000",
+    "group": "3"
+   },
+   {
+    "slot": 43,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t43_c000",
+    "group": "3"
+   },
+   {
+    "slot": 44,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t44_c000",
+    "group": "3"
+   },
+   {
+    "slot": 45,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t45_c000",
+    "group": "3"
+   },
+   {
+    "slot": 46,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t46_c000",
+    "group": "3"
+   },
+   {
+    "slot": 47,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t47_c000",
+    "group": "3"
+   },
+   {
+    "slot": 49,
+    "run": 0,
+    "run_slots": "000-049",
+    "artifact_id": "kimi-k3-high__t49_c000",
+    "group": "3"
+   }
+  ],
+  "qwen3.8-2.4t-a95b-thinking": [
+   {
+    "slot": 151,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t151_c000",
+    "group": "1"
+   },
+   {
+    "slot": 152,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t152_c000",
+    "group": "1"
+   },
+   {
+    "slot": 153,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t153_c000",
+    "group": "1"
+   },
+   {
+    "slot": 154,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t154_c000",
+    "group": "1"
+   },
+   {
+    "slot": 155,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t155_c000",
+    "group": "1"
+   },
+   {
+    "slot": 157,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t157_c000",
+    "group": "1"
+   },
+   {
+    "slot": 158,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t158_c000",
+    "group": "1"
+   },
+   {
+    "slot": 159,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t159_c000",
+    "group": "1"
+   },
+   {
+    "slot": 162,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t162_c000",
+    "group": "1"
+   },
+   {
+    "slot": 163,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t163_c000",
+    "group": "1"
+   },
+   {
+    "slot": 164,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t164_c000",
+    "group": "2"
+   },
+   {
+    "slot": 165,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t165_c000",
+    "group": "2"
+   },
+   {
+    "slot": 167,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t167_c000",
+    "group": "2"
+   },
+   {
+    "slot": 168,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t168_c000",
+    "group": "2"
+   },
+   {
+    "slot": 171,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t171_c000",
+    "group": "2"
+   },
+   {
+    "slot": 173,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t173_c000",
+    "group": "2"
+   },
+   {
+    "slot": 174,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t174_c000",
+    "group": "2"
+   },
+   {
+    "slot": 178,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t178_c000",
+    "group": "2"
+   },
+   {
+    "slot": 179,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t179_c000",
+    "group": "2"
+   },
+   {
+    "slot": 180,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t180_c000",
+    "group": "2"
+   },
+   {
+    "slot": 181,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t181_c000",
+    "group": "3"
+   },
+   {
+    "slot": 182,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t182_c000",
+    "group": "3"
+   },
+   {
+    "slot": 183,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t183_c000",
+    "group": "3"
+   },
+   {
+    "slot": 185,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t185_c000",
+    "group": "3"
+   },
+   {
+    "slot": 187,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t187_c000",
+    "group": "3"
+   },
+   {
+    "slot": 188,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t188_c000",
+    "group": "3"
+   },
+   {
+    "slot": 190,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t190_c000",
+    "group": "3"
+   },
+   {
+    "slot": 192,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t192_c000",
+    "group": "3"
+   },
+   {
+    "slot": 196,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t196_c000",
+    "group": "3"
+   },
+   {
+    "slot": 198,
+    "run": 3,
+    "run_slots": "150-199",
+    "artifact_id": "qwen3.8-2.4t-a95b-thinking__t198_c000",
+    "group": "3"
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+--- a/mjarena/envs/sumo.py
++++ b/mjarena/envs/sumo.py
+@@ -1222,5 +1222,8 @@
+-        for _ in range(self.apply_n_repeated_actions):
+-            for _ in range(n_substeps):
+-                mujoco.mj_step(self.model, self.data)
+-                if details is not None:
+-                    details.capture_contacts(integrate=True)
++        advance_interval = getattr(details, "advance_interval", None)
++        advanced = advance_interval(n_substeps * self.apply_n_repeated_actions) if advance_interval else False
++        if not advanced:
++            for _ in range(self.apply_n_repeated_actions):
++                for _ in range(n_substeps):
++                    mujoco.mj_step(self.model, self.data)
++                    if details is not None:
++                        details.capture_contacts(integrate=True)

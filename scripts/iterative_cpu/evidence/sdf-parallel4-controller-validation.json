@@ -1,0 +1,16 @@
+[
+  {
+    "label": "parallel-longest300",
+    "exact": true,
+    "events": 900,
+    "finished": false,
+    "wall": 9.602210409939289
+  },
+  {
+    "label": "parallel-fable-complete",
+    "exact": true,
+    "events": 2110,
+    "finished": true,
+    "wall": 8.502075734781101
+  }
+]

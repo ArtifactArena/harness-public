@@ -1,0 +1,419 @@
+{
+  "cpu_only": true,
+  "cores_per_match": 1,
+  "surface_workers": 0,
+  "full_match_timing_measured": false,
+  "tenfold_target_met": false,
+  "previous_source_commit": "b7b644210e02c42c756a181621add93bde58a014",
+  "baseline_harness": "3c03d494bf002846c86e1ab8e6c46726ac856816",
+  "benchmark_1000": {
+    "original": {
+      "steps": 1000,
+      "wall": 102.23231030721217,
+      "counts": {
+        "mj_forward": 1003,
+        "mj_step": 40050,
+        "capture_contacts": 40002,
+        "snapshot": 2000
+      },
+      "seconds": {
+        "mj_forward": 2.2830943847075105,
+        "mj_step": 84.64957183972001,
+        "capture_contacts": 1.0198744544759393,
+        "snapshot": 10.886219547130167
+      },
+      "mujoco": "3.10.0",
+      "affinity": [
+        0
+      ]
+    },
+    "previous": {
+      "steps": 1000,
+      "wall": 47.9618268115446,
+      "cpu_seconds": 47.947846469,
+      "counts": {
+        "mj_forward": 3,
+        "mj_step": 50,
+        "capture_contacts": 1002,
+        "snapshot": 2000
+      },
+      "seconds": {
+        "mj_forward": 0.1932032098993659,
+        "mj_step": 0.009644648991525173,
+        "capture_contacts": 0.038943481631577015,
+        "snapshot": 8.513736487366259
+      },
+      "mujoco": "3.10.0",
+      "affinity": [
+        0
+      ],
+      "thread_affinities": {
+        "687770": [
+          0
+        ],
+        "688019": [
+          0
+        ]
+      },
+      "child_processes": []
+    },
+    "selected_variant": {
+      "steps": 1000,
+      "wall": 40.546133308671415,
+      "cpu_seconds": 40.531902137,
+      "counts": {
+        "mj_forward": 3,
+        "mj_step": 50,
+        "capture_contacts": 1002,
+        "snapshot": 2000
+      },
+      "seconds": {
+        "mj_forward": 0.19278610590845346,
+        "mj_step": 0.0071772001683712006,
+        "capture_contacts": 0.036635504104197025,
+        "snapshot": 8.517078757286072
+      },
+      "mujoco": "3.10.0",
+      "affinity": [
+        0
+      ],
+      "thread_affinities": {
+        "766881": [
+          0
+        ],
+        "767015": [
+          0
+        ]
+      },
+      "child_processes": []
+    },
+    "selected_variant_build": {
+      "verify_simd": false,
+      "simd_target": "avx512skx-i32x16",
+      "backend": "cpu-serial",
+      "mujoco": "3.10.0",
+      "machine": "x86_64",
+      "library_sha256": "90129952c56473c7868409e8dae767833b3c5fe480179510c412cdcf3bd845d9",
+      "mujoco_library_sha256": "872b2954e9760b1df122e3c807a907ff806e1980099b00e15789ae67e08b75d5",
+      "source_hashes": {
+        "src/engine/engine_util_misc.c": "f24198840a9fecea750d061763e5d0df103f9d01edf1e013bc15cea94fbb99fc",
+        "src/engine/engine_collision_sdf.c": "3235b94665934d40257b5e397a99296d5e321fda15d4f0f4260d5cfd17bb1c4f",
+        "src/engine/engine_util_blas.c": "92856302640bd62299a5e1c70bc21cfe1a42fdccacebffdaf2c5fc14b3658cf8",
+        "include/mujoco/mjdata.h": "e2c7ac8a6011372eb1df4e9a53d63f8ddbc3fb940fd68d906480fe85ad0931d7",
+        "include/mujoco/mjmodel.h": "bcd51b20cb29b6aac7c8b9e1cf348f569b7fc2239f9226b844737c73511d90c8",
+        "include/mujoco/mjtype.h": "ec580ce2a4ef0c1f6a3e68b3c5b5eeaf61d03413827453e2d0a87c3bd92d16e4"
+      },
+      "generated_sha256": "1d96128f32080b736ca760d371796ed83504f8d55bd9ac2e413cf494111b6d59",
+      "compiler": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+      "flags": [
+        "-O3",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-march=native",
+        "-mprefer-vector-width=512"
+      ],
+      "ispc_version": "Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.31.0 (build commit c6adb4f86f5678ce @ 20260625, LLVM 23.0.0)",
+      "simd_source_sha256": "8a9dec943b314b18e8d14ef769805f82943a59a0328c4bf29c46071a24e846dc",
+      "simd_flags": [
+        "-O3",
+        "--opt=disable-fma",
+        "--target=avx512skx-i32x16",
+        "--pic",
+        "--math-lib=default"
+      ]
+    },
+    "speedup_over_previous": 1.18289520843871,
+    "speedup_over_original": 2.5213824837237495,
+    "final_state_byte_identical_to_original": true
+  },
+  "benchmark_3000": {
+    "previous": {
+      "steps": 3000,
+      "wall": 155.68481578491628,
+      "cpu_seconds": 155.622910388,
+      "counts": {
+        "mj_forward": 3,
+        "mj_step": 50,
+        "capture_contacts": 3002,
+        "snapshot": 6000
+      },
+      "seconds": {
+        "mj_forward": 0.19285171292722225,
+        "mj_step": 0.009565900079905987,
+        "capture_contacts": 0.11070186831057072,
+        "snapshot": 27.911188113503158
+      },
+      "mujoco": "3.10.0",
+      "affinity": [
+        0
+      ],
+      "thread_affinities": {
+        "770603": [
+          0
+        ],
+        "770776": [
+          0
+        ]
+      },
+      "child_processes": []
+    },
+    "candidate": {
+      "steps": 3000,
+      "wall": 130.68217949010432,
+      "cpu_seconds": 130.62746734799998,
+      "counts": {
+        "mj_forward": 3,
+        "mj_step": 50,
+        "capture_contacts": 3002,
+        "snapshot": 6000
+      },
+      "seconds": {
+        "mj_forward": 0.20203089900314808,
+        "mj_step": 0.007310512475669384,
+        "capture_contacts": 0.11011590529233217,
+        "snapshot": 28.011893634684384
+      },
+      "mujoco": "3.10.0",
+      "affinity": [
+        0
+      ],
+      "thread_affinities": {
+        "773719": [
+          0
+        ],
+        "773876": [
+          0
+        ]
+      },
+      "child_processes": []
+    },
+    "speedup_over_previous": 1.1913239922410785,
+    "wall_time_reduction_fraction": 0.16059778321190898,
+    "final_state_byte_identical_to_previous": true,
+    "final_state_sha256": "d868e94a316a83d5aa718efdec42f658f831832717f6513cc1aac8df087ed1e3"
+  },
+  "physics": {
+    "exact": true,
+    "steps": 1000,
+    "threads": 1,
+    "affinity": [
+      0
+    ],
+    "reference_seconds": 2.7326869489625096,
+    "accelerated_seconds": 0.849844847805798,
+    "physics_speedup": 3.215512756261327,
+    "mujoco": "3.10.0",
+    "library_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "model_sha256": "fb7a00fca82453dbc629f7414d128b3efca73ac67e8dcf8a68cee3da7aa3e771",
+    "state_sha256": "a394cbc3b30e66e832287daff0c4da6361840605f9a6fb875d92e6500eb555a2"
+  },
+  "kernel_verification": {
+    "exact": true,
+    "steps": 1000,
+    "threads": 1,
+    "affinity": [
+      0
+    ],
+    "reference_seconds": 2.73750062007457,
+    "accelerated_seconds": 2.7257103957235813,
+    "physics_speedup": 1.0043255601803798,
+    "mujoco": "3.10.0",
+    "library_sha256": "e3c87fee352e10c786c04cb9fa25c5cc473bc05abe858f3865ab58ca4db61762",
+    "model_sha256": "fb7a00fca82453dbc629f7414d128b3efca73ac67e8dcf8a68cee3da7aa3e771",
+    "state_sha256": "a394cbc3b30e66e832287daff0c4da6361840605f9a6fb875d92e6500eb555a2",
+    "exact_simd_gradient_checks": 1615622,
+    "exact_simd_distance_checks": 15091776
+  },
+  "octree_boundaries": {
+    "exact": true,
+    "points_checked": 72576,
+    "checks": [
+      "leaf",
+      "interpolation_weights",
+      "gradient_weights"
+    ],
+    "sampling": "root/split boundaries, adjacent floats, seeded other coordinates",
+    "affinity": [
+      0
+    ],
+    "library_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "model_sha256": "fb7a00fca82453dbc629f7414d128b3efca73ac67e8dcf8a68cee3da7aa3e771"
+  },
+  "regressions": {
+    "runtime_size_limit": 19,
+    "interval_physics_steps": 1000
+  },
+  "build": {
+    "verify_simd": false,
+    "simd_target": "avx512skx-i32x16",
+    "backend": "cpu-serial",
+    "mujoco": "3.10.0",
+    "machine": "x86_64",
+    "library_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "mujoco_library_sha256": "872b2954e9760b1df122e3c807a907ff806e1980099b00e15789ae67e08b75d5",
+    "source_hashes": {
+      "src/engine/engine_util_misc.c": "f24198840a9fecea750d061763e5d0df103f9d01edf1e013bc15cea94fbb99fc",
+      "src/engine/engine_collision_sdf.c": "3235b94665934d40257b5e397a99296d5e321fda15d4f0f4260d5cfd17bb1c4f",
+      "src/engine/engine_util_blas.c": "92856302640bd62299a5e1c70bc21cfe1a42fdccacebffdaf2c5fc14b3658cf8",
+      "include/mujoco/mjdata.h": "e2c7ac8a6011372eb1df4e9a53d63f8ddbc3fb940fd68d906480fe85ad0931d7",
+      "include/mujoco/mjmodel.h": "bcd51b20cb29b6aac7c8b9e1cf348f569b7fc2239f9226b844737c73511d90c8",
+      "include/mujoco/mjtype.h": "ec580ce2a4ef0c1f6a3e68b3c5b5eeaf61d03413827453e2d0a87c3bd92d16e4"
+    },
+    "generated_sha256": "b931bb64c279351297f0e6e9208572df1a1013d885c7a505b99aa627312d5264",
+    "compiler": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+    "flags": [
+      "-O3",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-march=native",
+      "-mprefer-vector-width=512"
+    ],
+    "ispc_version": "Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.31.0 (build commit c6adb4f86f5678ce @ 20260625, LLVM 23.0.0)",
+    "simd_source_sha256": "8a9dec943b314b18e8d14ef769805f82943a59a0328c4bf29c46071a24e846dc",
+    "simd_flags": [
+      "-O3",
+      "--opt=disable-fma",
+      "--target=avx512skx-i32x16",
+      "--pic",
+      "--math-lib=default"
+    ]
+  },
+  "experiments": {
+    "all_helpers_inlined": {
+      "physics": {
+        "exact": true,
+        "steps": 1000,
+        "threads": 1,
+        "affinity": [
+          0
+        ],
+        "reference_seconds": 2.745475041680038,
+        "accelerated_seconds": 1.1320771677419543,
+        "physics_speedup": 2.4251659868347786,
+        "mujoco": "3.10.0",
+        "library_sha256": "25dcb89605670595574866434599b0c346769cffe42a0094d28373404df9cedd",
+        "model_sha256": "fb7a00fca82453dbc629f7414d128b3efca73ac67e8dcf8a68cee3da7aa3e771",
+        "state_sha256": "a394cbc3b30e66e832287daff0c4da6361840605f9a6fb875d92e6500eb555a2"
+      },
+      "retained": false
+    },
+    "leaf_checks_and_index_guess": {
+      "physics": {
+        "exact": true,
+        "steps": 1000,
+        "threads": 1,
+        "affinity": [
+          0
+        ],
+        "reference_seconds": 2.7361022531986237,
+        "accelerated_seconds": 0.8656402910128236,
+        "physics_speedup": 3.1607843137676817,
+        "mujoco": "3.10.0",
+        "library_sha256": "9f9833000352d52245a31db72bf49a74826153557c3361e4b2d671d5fcee3667",
+        "model_sha256": "fb7a00fca82453dbc629f7414d128b3efca73ac67e8dcf8a68cee3da7aa3e771",
+        "state_sha256": "a394cbc3b30e66e832287daff0c4da6361840605f9a6fb875d92e6500eb555a2"
+      },
+      "replay": {
+        "steps": 1000,
+        "wall": 41.344483892433345,
+        "cpu_seconds": 41.330863116,
+        "counts": {
+          "mj_forward": 3,
+          "mj_step": 50,
+          "capture_contacts": 1002,
+          "snapshot": 2000
+        },
+        "seconds": {
+          "mj_forward": 0.1927226185798645,
+          "mj_step": 0.0074066827073693275,
+          "capture_contacts": 0.03769045416265726,
+          "snapshot": 8.56242099404335
+        },
+        "mujoco": "3.10.0",
+        "affinity": [
+          0
+        ],
+        "thread_affinities": {
+          "762853": [
+            0
+          ],
+          "763023": [
+            0
+          ]
+        },
+        "child_processes": []
+      }
+    },
+    "line_search_inside_simd": {
+      "physics": {
+        "exact": true,
+        "steps": 1000,
+        "threads": 1,
+        "affinity": [
+          0
+        ],
+        "reference_seconds": 2.744347513653338,
+        "accelerated_seconds": 0.9370081648230553,
+        "physics_speedup": 2.9288405551637653,
+        "mujoco": "3.10.0",
+        "library_sha256": "7a6b2d5ab4ede3bf89ca72bb7a05b1b2fb011d6b4d9a0be76b5bc133d99f2e1b",
+        "model_sha256": "fb7a00fca82453dbc629f7414d128b3efca73ac67e8dcf8a68cee3da7aa3e771",
+        "state_sha256": "a394cbc3b30e66e832287daff0c4da6361840605f9a6fb875d92e6500eb555a2"
+      },
+      "replay": {
+        "steps": 1000,
+        "wall": 43.63470517192036,
+        "cpu_seconds": 43.619702409000006,
+        "counts": {
+          "mj_forward": 3,
+          "mj_step": 50,
+          "capture_contacts": 1002,
+          "snapshot": 2000
+        },
+        "seconds": {
+          "mj_forward": 0.19270938821136951,
+          "mj_step": 0.008223810233175755,
+          "capture_contacts": 0.03819275554269552,
+          "snapshot": 8.563152883201838
+        },
+        "mujoco": "3.10.0",
+        "affinity": [
+          0
+        ],
+        "thread_affinities": {
+          "764804": [
+            0
+          ],
+          "764943": [
+            0
+          ]
+        },
+        "child_processes": []
+      },
+      "retained": false
+    },
+    "eight_lanes": {
+      "physics": {
+        "exact": true,
+        "steps": 1000,
+        "threads": 1,
+        "affinity": [
+          0
+        ],
+        "reference_seconds": 2.7401562742888927,
+        "accelerated_seconds": 1.0129180168733,
+        "physics_speedup": 2.705210321707253,
+        "mujoco": "3.10.0",
+        "library_sha256": "f5f37c48e81025f03451008b1bc9e1fbe6a75dd8cca0a9e2373cb3b59822ff32",
+        "model_sha256": "fb7a00fca82453dbc629f7414d128b3efca73ac67e8dcf8a68cee3da7aa3e771",
+        "state_sha256": "a394cbc3b30e66e832287daff0c4da6361840605f9a6fb875d92e6500eb555a2"
+      },
+      "retained": false
+    },
+    "thirty_two_lanes": {
+      "compiled": false,
+      "reason": "ISPC 1.31.0 does not support avx512skx-i32x32",
+      "retained": false
+    }
+  }
+}

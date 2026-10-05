@@ -1,0 +1,13 @@
+/* Per-run progress for the tool-use experiment. */
+#tool-experiment-progress{margin:28px 0 32px}
+#tool-experiment-progress .tool-progress-grid{display:grid;align-items:stretch}
+#tool-experiment-progress .tool-progress-card{min-width:0;border-bottom:1px solid var(--line)}
+#tool-experiment-progress .cardhead{align-items:flex-start;gap:10px}
+#tool-experiment-progress h4{font-size:20px;line-height:1.3;margin:0;overflow-wrap:anywhere}
+#tool-experiment-progress .cardhead>strong{white-space:nowrap}
+#tool-experiment-progress .tool-progress-status{margin:0 0 12px;overflow-wrap:anywhere}
+#tool-experiment-progress .tool-progress-complete .bar>div{background:#438960}
+#tool-experiment-progress .tool-progress-stopped .bar>div{background:#b75b32}
+#tool-experiment-progress .tool-progress-error{margin:12px 0;font-size:13px;overflow-wrap:anywhere}
+#tool-experiment-progress .tool-progress-error p{white-space:pre-wrap;max-height:180px;overflow:auto}
+#tool-experiment-progress .stats{margin-top:16px}

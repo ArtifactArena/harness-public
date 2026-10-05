@@ -1,0 +1,122 @@
+{
+  "hybrid4-repeat2": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.383910994976759,
+    "new_seconds": 1.3662449028342962,
+    "speedup": 1.0129303993052887,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "666e5e0a5489b4d2a265128d61bf9a903870e4a4b8f50cc30b0460fb576f7225"
+  },
+  "fastleaf-physics": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.399871070869267,
+    "new_seconds": 1.3873082529753447,
+    "speedup": 1.0090555346059384,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "681223bbc36e2f5e2d1c15d727158fa21524c3a45f281a54c910dbc1872bf27a"
+  },
+  "hybrid1-physics": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.4072767877951264,
+    "new_seconds": 1.3786026537418365,
+    "speedup": 1.0207994188720455,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "1730551b5edcc57d270822d2b8acf93052a200482f90d595872df9cb91a31ed0"
+  },
+  "hybrid4-repeat3": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.3376737898215652,
+    "new_seconds": 1.3265917086973786,
+    "speedup": 1.0083537994784155,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "666e5e0a5489b4d2a265128d61bf9a903870e4a4b8f50cc30b0460fb576f7225"
+  },
+  "unroll-physics": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.4115757094696164,
+    "new_seconds": 1.3718839623034,
+    "speedup": 1.0289322918387163,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "3911583d7d2b2ebf8932623b680466d541e40c92f5e3043306a6e89e73dad0f9"
+  },
+  "sphere-fused-physics": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.4468164825811982,
+    "new_seconds": 1.4168850043788552,
+    "speedup": 1.021124846483547,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "9398df3ff9c0ae33ed1cd8a92c1cfd51f080c6e67a4678ca0510b1ece8e7046b"
+  },
+  "hybrid4-physics": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.459506880491972,
+    "new_seconds": 1.378876792266965,
+    "speedup": 1.0584751942140138,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "666e5e0a5489b4d2a265128d61bf9a903870e4a4b8f50cc30b0460fb576f7225"
+  },
+  "hybrid4-repeat1": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.398000898770988,
+    "new_seconds": 1.362338962033391,
+    "speedup": 1.0261769924603559,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "666e5e0a5489b4d2a265128d61bf9a903870e4a4b8f50cc30b0460fb576f7225"
+  },
+  "binary-physics": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.466143112629652,
+    "new_seconds": 1.922507013194263,
+    "speedup": 0.762620423523783,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "98d996fb99262d364faae804ac605cabfcc87b352cbfe795edff7274494c0798"
+  },
+  "hybrid2-physics": {
+    "exact": true,
+    "substeps": 500,
+    "old_seconds": 1.3381301453337073,
+    "new_seconds": 1.3383046025410295,
+    "speedup": 0.9998696431238517,
+    "cpu": [
+      0
+    ],
+    "old_sha256": "c73a5f18b3062f28c95e5fc1ed6f377edf6ff095baecb4b81d4e27b76297f3ed",
+    "new_sha256": "2924b9b40125e62705faa4ff63d37fe5ef81bdeca8f0ee62360fb5137a893687"
+  }
+}

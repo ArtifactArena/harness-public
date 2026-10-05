@@ -1,0 +1,52 @@
+<mujoco model="undertow" description="Heavy traction robot with a concave lifting scoop and inverted mobility">
+  <compiler angle="radian" description="Makes hinge limits explicitly use radians"/>
+  <asset description="Contains the closed inline surface for the concave capture scoop">
+    <mesh name="capture_scoop_surface" inertia="exact"
+          vertex="0 -0.72 0.107  0 -0.52 0.027  0 0.52 0.027  0 0.72 0.107
+                  0.80 -0.72 -0.168  0.80 -0.52 -0.248  0.80 0.52 -0.248  0.80 0.72 -0.168
+                  0 -0.72 0.075  0 -0.52 -0.005  0 0.52 -0.005  0 0.72 0.075
+                  0.80 -0.72 -0.200  0.80 -0.52 -0.280  0.80 0.52 -0.280  0.80 0.72 -0.200"
+          face="0 4 5  0 5 1  1 5 6  1 6 2  2 6 7  2 7 3
+                8 13 12  8 9 13  9 14 13  9 10 14  10 15 14  10 11 15
+                0 1 9  0 9 8  1 2 10  1 10 9  2 3 11  2 11 10
+                4 12 13  4 13 5  5 13 14  5 14 6  6 14 15  6 15 7
+                0 8 12  0 12 4  3 7 15  3 15 11"
+          description="Closed constant-thickness ramp with raised lateral shoulders that center and retain an opponent"/>
+  </asset>
+  <worldbody description="Contains the freely moving chassis and its connected mechanisms">
+    <body name="chassis" pos="0 0 0.28" description="Low central frame joining the wheels ballast and scoop hinge">
+      <freejoint name="root" description="Allows unrestricted translation and rotation of the complete robot"/>
+      <geom name="chassis_plate" type="box" pos="0 0 -0.13" size="0.67 0.75 0.05" material="steel" description="Low steel plate connects all mechanisms while leaving ground clearance"/>
+      <body name="rear_ballast" pos="-0.18 0 -0.072" description="Rigid rearward ballast counters the loaded scoop without exceeding the body mass limit">
+        <geom name="tungsten_ballast" type="box" size="0.35 0.50 0.008" material="tungsten" description="Dense thin slab rests on the chassis and lowers the center of mass"/>
+      </body>
+      <body name="front_left_wheel" pos="0.57 0.86 0" description="Front left driven wheel overlaps the frame edge and supports lifting loads">
+        <joint name="front_left_axle" type="hinge" axis="0 1 0" damping="1.2" description="Independent continuous axle supplies forward traction and differential steering"/>
+        <geom name="front_left_tire" type="cylinder" size="0.28 0.11" xyaxes="1 0 0 0 0 -1" material="rubber" description="Wide rubber cylinder has its symmetry axis aligned with the axle"/>
+      </body>
+      <body name="rear_left_wheel" pos="-0.57 0.86 0" description="Rear left driven wheel stabilizes the chassis against scoop reaction torque">
+        <joint name="rear_left_axle" type="hinge" axis="0 1 0" damping="1.2" description="Continuous rear axle contributes traction during attack and escape"/>
+        <geom name="rear_left_tire" type="cylinder" size="0.28 0.11" xyaxes="1 0 0 0 0 -1" material="rubber" description="Rear rubber tire shares the front tire radius for predictable skid steering"/>
+      </body>
+      <body name="front_right_wheel" pos="0.57 -0.86 0" description="Front right driven wheel forms the opposite support for loaded lifting">
+        <joint name="front_right_axle" type="hinge" axis="0 1 0" damping="1.2" description="Independent right axle opposes left wheel speed to control yaw"/>
+        <geom name="front_right_tire" type="cylinder" size="0.28 0.11" xyaxes="1 0 0 0 0 -1" material="rubber" description="Wide right rubber tire provides traction and lateral support"/>
+      </body>
+      <body name="rear_right_wheel" pos="-0.57 -0.86 0" description="Rear right driven wheel completes the broad support rectangle">
+        <joint name="rear_right_axle" type="hinge" axis="0 1 0" damping="1.2" description="Continuous axle remains useful during reverse and inverted driving"/>
+        <geom name="rear_right_tire" type="cylinder" size="0.28 0.11" xyaxes="1 0 0 0 0 -1" material="rubber" description="Exposed upper tread permits propulsion with the chassis inverted"/>
+      </body>
+      <body name="lifting_scoop" pos="0.38 0 0.02" description="Front scoop pivots upward to transfer opponent weight onto the driven chassis">
+        <joint name="scoop_hinge" type="hinge" axis="0 -1 0" limited="true" range="0 1.25" damping="80" description="Positive rotation raises the scoop while a lower stop preserves its entry profile"/>
+        <geom name="capture_scoop" type="sdf" mesh="capture_scoop_surface" material="aluminum" description="Low central lip and concave shoulders combine entry lifting and lateral retention"/>
+      </body>
+    </body>
+  </worldbody>
+  <actuator description="Defines four traction motors and the independently controlled lifting motor">
+    <motor name="drive_fl" joint="front_left_axle" gear="800" ctrllimited="true" ctrlrange="-1 1" description="Supplies bounded front left traction torque"/>
+    <motor name="drive_rl" joint="rear_left_axle" gear="800" ctrllimited="true" ctrlrange="-1 1" description="Supplies bounded rear left traction torque"/>
+    <motor name="drive_fr" joint="front_right_axle" gear="800" ctrllimited="true" ctrlrange="-1 1" description="Supplies bounded front right traction torque"/>
+    <motor name="drive_rr" joint="rear_right_axle" gear="800" ctrllimited="true" ctrlrange="-1 1" description="Supplies bounded rear right traction torque"/>
+    <motor name="lift" joint="scoop_hinge" gear="2400" ctrllimited="true" ctrlrange="-1 1" description="Raises captured opponents and retracts the scoop for escape or inverted travel"/>
+  </actuator>
+</mujoco>

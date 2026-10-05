@@ -1,0 +1,271 @@
+{
+  "source_repo": "arena_5_claude",
+  "source_head": "c7cb3814",
+  "note": "Includes working-tree tests. No simulator implementation copied. Optional evaluator tests removed; shared checks run only with native Python/MuJoCo.",
+  "files": [
+    {
+      "source": "unit-tests/test_arena_rule_activation.py",
+      "destination": "test_arena_rule_activation.py",
+      "source_sha256": "8cae94ea6d0f5dc97aab2a6999e93eba9f5aacc15f0a79335a2b3261f3d2b7be",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_center_of_mass.py",
+      "destination": "test_center_of_mass.py",
+      "source_sha256": "a5a5143d3b6253aace4c4ea73fdc3aeaa70fead9930d1ec62e09faa528c3b0fd",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_code_block_extraction.py",
+      "destination": "test_code_block_extraction.py",
+      "source_sha256": "cddc1764f1daf74afb908e2984294be1cdf98226d111d6c497ab9ea867028b79",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_contact_force_observation.py",
+      "destination": "test_contact_force_observation.py",
+      "source_sha256": "e8d9419d7ed318c02b5c6120d469463f015e6ac009b0566501e681600f98c3d8",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_controller_state_isolation.py",
+      "destination": "test_controller_state_isolation.py",
+      "source_sha256": "c57bd6236db4593bad80dfbe6e650c444a55616d53ff860f4f9fdb30bc461392",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_detailed_observations.py",
+      "destination": "test_detailed_observations.py",
+      "source_sha256": "c15dff7be714faf700677a87618f5bf06375d694281be42ea0cd04d641265890",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_fromto_materials.py",
+      "destination": "test_fromto_materials.py",
+      "source_sha256": "767517c5cb96e3142f5b4a591d80bab8f5a6022cb7ade5bc2df316e9575c30cb",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_inactivity.py",
+      "destination": "test_inactivity.py",
+      "source_sha256": "5e0b74dedaa72c7ab2f0c75c051896d121769b9732ddd78e53986d2be8b5a969",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_internal_actuation.py",
+      "destination": "test_internal_actuation.py",
+      "source_sha256": "9a09be01cff605f3568d7abc2d2a04899a781d709d5e7e9c82406f7fbb415ad2",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_joint_damping_rules.py",
+      "destination": "test_joint_damping_rules.py",
+      "source_sha256": "5337f40e04e146d24fa20003eb9b3d8e38814aa8cbd07a52ef4b86861517d990",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_observation_adversarial.py",
+      "destination": "test_observation_adversarial.py",
+      "source_sha256": "81ebe4313b89fa03dd38d5d59d8900df09ea40b04094bace3b2d7255f97108a7",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_observation_stress.py",
+      "destination": "test_observation_stress.py",
+      "source_sha256": "f4e06d38657a225a625aebfc2150d84a7c5c729f6bb05bef82bc9f94769ca8c7",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_policy_code_safety.py",
+      "destination": "test_policy_code_safety.py",
+      "source_sha256": "bbe1d9bd416e459af109e03cfee0184c1f21081faffffe718be76b72cecb5d26",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_robot_collision_settings.py",
+      "destination": "test_robot_collision_settings.py",
+      "source_sha256": "ace7bd4c096a2c77333f93e2d4fbef388cfb23385618e2a182fd862c2d92fe77",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_sdf_bounds.py",
+      "destination": "test_sdf_bounds.py",
+      "source_sha256": "12867e36aab294e1af8dc914cce8adead1d549c47a1149db75bf9b52cd9063f2",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_sdf_materials.py",
+      "destination": "test_sdf_materials.py",
+      "source_sha256": "dff1aaf2fec58cf8863d0331664dff75e211244cc4a96a8c5aa6bd3ac09798e9",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_spawn_height.py",
+      "destination": "test_spawn_height.py",
+      "source_sha256": "3acf2db624f33150a33593df1b8cc12a655f55cac02489abd6af7858ccc71d79",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_springs_tendons.py",
+      "destination": "test_springs_tendons.py",
+      "source_sha256": "9596fa9b67054fe3cd6617b00f23802938f2a287da35e897cc9c3a77f38133f8",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_welded_body_geoms.py",
+      "destination": "test_welded_body_geoms.py",
+      "source_sha256": "c6c41bc2e8b56484c40ed47ed428f4eb67638aa14040b296666a39b041141c7c",
+      "kind": "native regression; fixture/helper paths made self-contained"
+    },
+    {
+      "source": "unit-tests/test_match_tools.py",
+      "destination": "test_qualification.py",
+      "source_sha256": "4460cf1fb1bb6481821c563861ca86929f8c39e9dc079122ce3255de35bf319a",
+      "kind": "qualification gate only; optional evaluators/replay scoring removed"
+    },
+    {
+      "source": "browser_match/tests/collision_settings_trace.py",
+      "destination": "support/collision_settings_trace.py",
+      "source_sha256": "1a1a7a38159a757ad3da0fd8d896d532a47702c5793ab030eae7f3f44762a8aa",
+      "kind": "pure Python native checks; no browser runtime or WASM dependencies"
+    },
+    {
+      "source": "browser_match/tests/internal_actuation_trace.py",
+      "destination": "support/internal_actuation_trace.py",
+      "source_sha256": "ce4562ba3eed12e1cf94563dc20eb4355877693fa6f72862c1b1d5bdb64fd69b",
+      "kind": "pure Python native checks; no browser runtime or WASM dependencies"
+    },
+    {
+      "source": "browser_match/tests/detailed_observation_trace.py",
+      "destination": "support/detailed_observation_trace.py",
+      "source_sha256": "8ff923abc295bcfaf4a4c73f30bfbbf4fcfedc6519daa69c2916732a020c8e9e",
+      "kind": "pure Python native checks; no browser runtime or WASM dependencies"
+    },
+    {
+      "source": "browser_match/tests/observation_stress.py",
+      "destination": "support/observation_stress.py",
+      "source_sha256": "d15c76b3b25a0b33f8a472302363a768a2fe198c8074e11f930e255f3aefaa09",
+      "kind": "pure Python native checks; no browser runtime or WASM dependencies"
+    },
+    {
+      "source": "browser_match/tests/observation_adversarial.py",
+      "destination": "support/observation_adversarial.py",
+      "source_sha256": "a9e1bf1b18cacff4d3c82c93c18a8c9f83b3ee5cbbe7939207f1fba51e231699",
+      "kind": "pure Python native checks; no browser runtime or WASM dependencies"
+    },
+    {
+      "source": "browser_match/tests/fixtures/arena_rules.xml",
+      "destination": "fixtures/arena_rules.xml",
+      "source_sha256": "42c9787d856831dda1b6e711737d0f3e0bf4fee527cfa6b02b2550c74f86d08f",
+      "kind": "MJCF fixture"
+    },
+    {
+      "source": "browser_match/tests/fixtures/welded_bodies.xml",
+      "destination": "fixtures/welded_bodies.xml",
+      "source_sha256": "f959066c665dc01da5a79b52d1e51c560a70024cecb3fbbfa8684ad30384f0a5",
+      "kind": "MJCF fixture"
+    },
+    {
+      "source": "bot_builder_ide/tests/fixtures/gyrefang.xml",
+      "destination": "fixtures/gyrefang.xml",
+      "source_sha256": "1585c1d9a3de5ab5c77200093724967945008f22cdb39618c7b9b2153de3f146",
+      "kind": "MJCF fixture"
+    },
+    {
+      "source": "bot_builder_ide/tests/fixtures/undertow.xml",
+      "destination": "fixtures/undertow.xml",
+      "source_sha256": "c12b1878e3c50da55707aa05a1b68e4c3317a0d19e709ec4630c9563613dd826",
+      "kind": "MJCF fixture"
+    },
+    {
+      "source": "runs/prompt_samples/20260915T201811Z-detailed-observations-gpt55-astra/astra/robot.xml",
+      "destination": "fixtures/flying_astra_root_actuation.xml",
+      "source_sha256": "898dc8c0322351e2c564b8597530d111e94392b39f6978b3f0e22d56cf517bef",
+      "kind": "Skyhook Bailiff reduced reproducer: original 9 root-motor gears, primitive chassis to isolate root actuation from SDF support"
+    },
+    {
+      "source": "unit-tests/environment_additions/environment_fixtures.py",
+      "destination": "environment_fixtures.py",
+      "source_sha256": "063851707c8871c302c0120619c43da1049e9a1b89c48fbdba89261fae138b0b",
+      "kind": "native boundary, diagnostics, collision, or integration regression; copied unchanged"
+    },
+    {
+      "source": "unit-tests/environment_additions/fixtures/sdf_false_contact.xml",
+      "destination": "fixtures/sdf_false_contact.xml",
+      "source_sha256": "c5e9ee565bfcd7bb44e726fc19d281123230b66f5fe58926bc096726230ed09a",
+      "kind": "native boundary, diagnostics, collision, or integration regression; copied unchanged"
+    },
+    {
+      "source": "unit-tests/environment_additions/test_constraint_boundaries.py",
+      "destination": "test_constraint_boundaries.py",
+      "source_sha256": "ba9a738a77b25e0f3fd82d85716d08dd07d36228a2830efe36f01ebeb5bca40f",
+      "kind": "native boundary, diagnostics, collision, or integration regression; copied unchanged"
+    },
+    {
+      "source": "unit-tests/environment_additions/test_match_diagnostics.py",
+      "destination": "test_match_diagnostics.py",
+      "source_sha256": "339af812ff61bb69d1e7b2b0f009d1bfd4b23572aab94d568c99d5053f1c0be5",
+      "kind": "native boundary, diagnostics, collision, or integration regression; copied unchanged"
+    },
+    {
+      "source": "unit-tests/environment_additions/test_native_integration.py",
+      "destination": "test_native_integration.py",
+      "source_sha256": "4354402f6c7757e09b9e4226e70cc6410d79d1995cd66b182c1f41bef8190fa6",
+      "kind": "native boundary, diagnostics, collision, or integration regression; copied unchanged"
+    },
+    {
+      "source": "unit-tests/environment_additions/test_sdf_contacts.py",
+      "destination": "test_sdf_contacts.py",
+      "source_sha256": "5ecdb1e6730d839fd157224a0d98ea03cfe06b29ffededf26097d120cafd9354",
+      "kind": "native boundary, diagnostics, collision, or integration regression; copied unchanged"
+    }
+  ],
+  "generated_files": [
+    "conftest.py",
+    "test_flying_astra.py",
+    "README.md",
+    "run_tests.py"
+  ],
+  "installed_sha256": {
+    "README.md": "3c89157fd716a5e6a4bb6b2dc36028beaa6473522686a07827c5e0fdfa68985c",
+    "conftest.py": "1bff46e605658709ab96f614b8e4686300ca5a26bfb56d2243778d936e2d4844",
+    "environment_fixtures.py": "063851707c8871c302c0120619c43da1049e9a1b89c48fbdba89261fae138b0b",
+    "fixtures/arena_rules.xml": "42c9787d856831dda1b6e711737d0f3e0bf4fee527cfa6b02b2550c74f86d08f",
+    "fixtures/flying_astra_root_actuation.xml": "d4a4821f81137726bf8d26f8e015c0abd3f74c48127a1f23798520f6059f45cd",
+    "fixtures/gyrefang.xml": "1585c1d9a3de5ab5c77200093724967945008f22cdb39618c7b9b2153de3f146",
+    "fixtures/sdf_false_contact.xml": "c5e9ee565bfcd7bb44e726fc19d281123230b66f5fe58926bc096726230ed09a",
+    "fixtures/undertow.xml": "c12b1878e3c50da55707aa05a1b68e4c3317a0d19e709ec4630c9563613dd826",
+    "fixtures/welded_bodies.xml": "f959066c665dc01da5a79b52d1e51c560a70024cecb3fbbfa8684ad30384f0a5",
+    "run_tests.py": "6e94a143a1dbe669c823850d6e86bc8217b198a1b6ae97f3fef2cb5386704640",
+    "support/collision_settings_trace.py": "bbb36e3691f7140924adb2012113dcc2875682c3052fbe8b48c1978fb3bf4b93",
+    "support/detailed_observation_trace.py": "d29dd7776ebba2665e7abfbc42812ccb267df360d8df91a1c0e2e8e26179ec80",
+    "support/internal_actuation_trace.py": "56f794aad7169180ab4db05a1fdbb280386f9ee91dd86fba052f029081fc60d6",
+    "support/observation_adversarial.py": "a9e1bf1b18cacff4d3c82c93c18a8c9f83b3ee5cbbe7939207f1fba51e231699",
+    "support/observation_stress.py": "46ddcd0d521e4f14f1e81a8ee0474a280c425999ef4dbd393377e99a4cd8c6cd",
+    "test_arena_rule_activation.py": "63dd8fdadeca41f966478916cf52600d140e7d11a0b040fb05bf945b4bdece1b",
+    "test_center_of_mass.py": "a5a5143d3b6253aace4c4ea73fdc3aeaa70fead9930d1ec62e09faa528c3b0fd",
+    "test_code_block_extraction.py": "d6b93d4a4531f9323060b7d3926002a0b90243eb45e0922d6bb33a0a9d329fd9",
+    "test_constraint_boundaries.py": "ba9a738a77b25e0f3fd82d85716d08dd07d36228a2830efe36f01ebeb5bca40f",
+    "test_contact_force_observation.py": "e8d9419d7ed318c02b5c6120d469463f015e6ac009b0566501e681600f98c3d8",
+    "test_controller_state_isolation.py": "b18213acea0a8dcaf5583af547041b14ef311934eeeec3c8ffc7c537ac88a99b",
+    "test_detailed_observations.py": "c4f86ae775440a426a5065f9fcbb45e90540543d2b6d81a8013af8b78058ef6d",
+    "test_flying_astra.py": "f8ede95e8f0d6cf872e85bac1e7d6392c950961517e44e85c3a8167890de8905",
+    "test_fromto_materials.py": "767517c5cb96e3142f5b4a591d80bab8f5a6022cb7ade5bc2df316e9575c30cb",
+    "test_inactivity.py": "5e0b74dedaa72c7ab2f0c75c051896d121769b9732ddd78e53986d2be8b5a969",
+    "test_internal_actuation.py": "920285e3709c0f0c66a9d39d9fec68d4f5057d961e71edd4c6dad77fc3740b6a",
+    "test_joint_damping_rules.py": "5337f40e04e146d24fa20003eb9b3d8e38814aa8cbd07a52ef4b86861517d990",
+    "test_match_diagnostics.py": "339af812ff61bb69d1e7b2b0f009d1bfd4b23572aab94d568c99d5053f1c0be5",
+    "test_native_integration.py": "4354402f6c7757e09b9e4226e70cc6410d79d1995cd66b182c1f41bef8190fa6",
+    "test_observation_adversarial.py": "b7aa1b432ff07816a3c304cf1bf6562284d6176da507d6df62c7f2e9f8c32a86",
+    "test_observation_stress.py": "ef2a99c3b1770a6a10ebcbf8fe5b91c697cebf591db2cd46799fb272b54aa462",
+    "test_policy_code_safety.py": "91200d83466fed289ed712d2980dee0b35787f48c4364ed15f14ea659f9a5f89",
+    "test_qualification.py": "a22a8f07c72ce21c33c86bb94d8ed169d0fc9eab9e44ebd500a224488d00104f",
+    "test_robot_collision_settings.py": "c1c29397600e9fe4e7e033849d3723481222ab5121ff8bc67be38739a9ea4485",
+    "test_sdf_bounds.py": "12867e36aab294e1af8dc914cce8adead1d549c47a1149db75bf9b52cd9063f2",
+    "test_sdf_contacts.py": "5ecdb1e6730d839fd157224a0d98ea03cfe06b29ffededf26097d120cafd9354",
+    "test_sdf_materials.py": "45edc49c7031163503f94101d4d13f6353fa7d34732a4a0796c05a268052cf2e",
+    "test_spawn_height.py": "f7b78909251ed69754e537aba1d14dbc1d5d498847244c763c50a9235e2b88e8",
+    "test_springs_tendons.py": "9596fa9b67054fe3cd6617b00f23802938f2a287da35e897cc9c3a77f38133f8",
+    "test_welded_body_geoms.py": "d95f9dfc237fb61c79f2dda77a304e329c4dc91f36d9ae709bfab1a83aa40b68"
+  }
+}

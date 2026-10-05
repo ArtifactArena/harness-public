@@ -1,0 +1,1105 @@
+{
+  "method": "Two repeats of 1000 physics substeps per scene and thread count, alternating reference/candidate order each step. Latest SIMD plus conservative rejection serial reference. Node8 distinct idle physical cores in one socket. State, force and selected contact fields checked byte-for-byte every step. Physics-only timings; not full-match validation.",
+  "results": [
+    {
+      "scene": "astra",
+      "threads": 1,
+      "speedup": 0.9959110892857281,
+      "serial_seconds": 0.8989354618825018,
+      "parallel_seconds": 0.9026262199040502,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra",
+      "threads": 2,
+      "speedup": 1.2920103804239322,
+      "serial_seconds": 0.8700981070287526,
+      "parallel_seconds": 0.673445136519149,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra",
+      "threads": 4,
+      "speedup": 1.9173685291036908,
+      "serial_seconds": 0.8687201356515288,
+      "parallel_seconds": 0.45307937543839216,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra",
+      "threads": 8,
+      "speedup": 1.9405432940262344,
+      "serial_seconds": 0.8906775170471519,
+      "parallel_seconds": 0.4589835845399648,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra",
+      "threads": 16,
+      "speedup": 1.7892528538913703,
+      "serial_seconds": 0.911898530786857,
+      "parallel_seconds": 0.5096532492898405,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "longest",
+      "threads": 1,
+      "speedup": 1.001514998254579,
+      "serial_seconds": 0.6230727164074779,
+      "parallel_seconds": 0.6221301902551204,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "longest",
+      "threads": 2,
+      "speedup": 1.4658741747785922,
+      "serial_seconds": 0.6168585668783635,
+      "parallel_seconds": 0.420812766533345,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "longest",
+      "threads": 4,
+      "speedup": 1.5148875969490858,
+      "serial_seconds": 0.6171298425178975,
+      "parallel_seconds": 0.4073766553774476,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "longest",
+      "threads": 8,
+      "speedup": 1.4802878491979043,
+      "serial_seconds": 0.6255234251730144,
+      "parallel_seconds": 0.4225687764119357,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "longest",
+      "threads": 16,
+      "speedup": 1.388478804123782,
+      "serial_seconds": 0.6486037936992943,
+      "parallel_seconds": 0.4671326575335115,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra9",
+      "threads": 1,
+      "speedup": 1.0093565509670452,
+      "serial_seconds": 0.6345000858418643,
+      "parallel_seconds": 0.6286183858755976,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra9",
+      "threads": 2,
+      "speedup": 1.4639847340438557,
+      "serial_seconds": 0.6181809986010194,
+      "parallel_seconds": 0.42225918360054493,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra9",
+      "threads": 4,
+      "speedup": 1.4438815720128186,
+      "serial_seconds": 0.6494333012960851,
+      "parallel_seconds": 0.44978294195607305,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra9",
+      "threads": 8,
+      "speedup": 1.4115825372008761,
+      "serial_seconds": 0.6171077860053629,
+      "parallel_seconds": 0.43717442639172077,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    },
+    {
+      "scene": "astra9",
+      "threads": 16,
+      "speedup": 1.0509408981609034,
+      "serial_seconds": 0.6154560672584921,
+      "parallel_seconds": 0.5856238617561758,
+      "repeats": 2,
+      "substeps_per_repeat": 1000,
+      "exact": true
+    }
+  ],
+  "raw": [
+    {
+      "scene": "astra",
+      "threads": 1,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.45676449430175126,
+      "parallel_seconds": 0.457693433156237,
+      "speedup": 0.9979703906868844,
+      "thread_affinities": {
+        "2023985": [
+          88
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 2,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.4422047163825482,
+      "parallel_seconds": 0.3424824890680611,
+      "speedup": 1.2911746746113768,
+      "thread_affinities": {
+        "2024519": [
+          88
+        ],
+        "2024524": [
+          54
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 4,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.44456280721351504,
+      "parallel_seconds": 0.2411349629983306,
+      "speedup": 1.8436264973179888,
+      "thread_affinities": {
+        "2024527": [
+          88
+        ],
+        "2024531": [
+          54
+        ],
+        "2024532": [
+          72
+        ],
+        "2024533": [
+          78
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 8,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.43881758977659047,
+      "parallel_seconds": 0.22698059072718024,
+      "speedup": 1.9332824378099716,
+      "thread_affinities": {
+        "2024546": [
+          88
+        ],
+        "2024575": [
+          54
+        ],
+        "2024576": [
+          72
+        ],
+        "2024577": [
+          78
+        ],
+        "2024578": [
+          106
+        ],
+        "2024579": [
+          68
+        ],
+        "2024580": [
+          34
+        ],
+        "2024581": [
+          96
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 16,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.4587639670353383,
+      "parallel_seconds": 0.2604057122953236,
+      "speedup": 1.761727740116002,
+      "thread_affinities": {
+        "2024582": [
+          88
+        ],
+        "2024587": [
+          54
+        ],
+        "2024588": [
+          72
+        ],
+        "2024589": [
+          78
+        ],
+        "2024590": [
+          106
+        ],
+        "2024591": [
+          68
+        ],
+        "2024592": [
+          34
+        ],
+        "2024593": [
+          96
+        ],
+        "2024594": [
+          124
+        ],
+        "2024595": [
+          58
+        ],
+        "2024596": [
+          86
+        ],
+        "2024597": [
+          52
+        ],
+        "2024598": [
+          114
+        ],
+        "2024599": [
+          48
+        ],
+        "2024600": [
+          14
+        ],
+        "2024601": [
+          76
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 16,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.4531345637515187,
+      "parallel_seconds": 0.24924753699451685,
+      "speedup": 1.8180101966724236,
+      "thread_affinities": {
+        "2024603": [
+          88
+        ],
+        "2024607": [
+          54
+        ],
+        "2024608": [
+          72
+        ],
+        "2024609": [
+          78
+        ],
+        "2024610": [
+          106
+        ],
+        "2024611": [
+          68
+        ],
+        "2024612": [
+          34
+        ],
+        "2024613": [
+          96
+        ],
+        "2024614": [
+          124
+        ],
+        "2024615": [
+          58
+        ],
+        "2024616": [
+          86
+        ],
+        "2024617": [
+          52
+        ],
+        "2024618": [
+          114
+        ],
+        "2024619": [
+          48
+        ],
+        "2024620": [
+          14
+        ],
+        "2024621": [
+          76
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 8,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.45185992727056146,
+      "parallel_seconds": 0.23200299381278455,
+      "speedup": 1.9476469671559111,
+      "thread_affinities": {
+        "2024624": [
+          88
+        ],
+        "2024818": [
+          54
+        ],
+        "2024819": [
+          72
+        ],
+        "2024820": [
+          78
+        ],
+        "2024821": [
+          106
+        ],
+        "2024822": [
+          68
+        ],
+        "2024823": [
+          34
+        ],
+        "2024824": [
+          96
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 4,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.4241573284380138,
+      "parallel_seconds": 0.21194441244006157,
+      "speedup": 2.0012668583936675,
+      "thread_affinities": {
+        "2024827": [
+          88
+        ],
+        "2024831": [
+          54
+        ],
+        "2024832": [
+          72
+        ],
+        "2024833": [
+          78
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 2,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.42789339064620435,
+      "parallel_seconds": 0.33096264745108783,
+      "speedup": 1.2928751747111935,
+      "thread_affinities": {
+        "2024836": [
+          88
+        ],
+        "2024840": [
+          54
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra",
+      "threads": 1,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.4421709675807506,
+      "parallel_seconds": 0.4449327867478132,
+      "speedup": 0.9937927272403325,
+      "thread_affinities": {
+        "2024845": [
+          88
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 1,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.31148419063538313,
+      "parallel_seconds": 0.311125400243327,
+      "speedup": 1.0011532018657927,
+      "thread_affinities": {
+        "2024851": [
+          88
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 2,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3093011255841702,
+      "parallel_seconds": 0.21084766602143645,
+      "speedup": 1.4669411875430682,
+      "thread_affinities": {
+        "2024856": [
+          88
+        ],
+        "2024861": [
+          54
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 4,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.30918820830993354,
+      "parallel_seconds": 0.2043139806482941,
+      "speedup": 1.5132993216072173,
+      "thread_affinities": {
+        "2024862": [
+          88
+        ],
+        "2024867": [
+          54
+        ],
+        "2024868": [
+          72
+        ],
+        "2024869": [
+          78
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 8,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.31892065261490643,
+      "parallel_seconds": 0.2161840747576207,
+      "speedup": 1.4752273171484578,
+      "thread_affinities": {
+        "2024870": [
+          88
+        ],
+        "2024874": [
+          54
+        ],
+        "2024875": [
+          72
+        ],
+        "2024876": [
+          78
+        ],
+        "2024877": [
+          106
+        ],
+        "2024878": [
+          68
+        ],
+        "2024879": [
+          34
+        ],
+        "2024880": [
+          96
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 16,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3274391037411988,
+      "parallel_seconds": 0.2407646351493895,
+      "speedup": 1.3599966769954797,
+      "thread_affinities": {
+        "2024883": [
+          88
+        ],
+        "2024886": [
+          54
+        ],
+        "2024887": [
+          72
+        ],
+        "2024888": [
+          78
+        ],
+        "2024889": [
+          106
+        ],
+        "2024890": [
+          68
+        ],
+        "2024891": [
+          34
+        ],
+        "2024892": [
+          96
+        ],
+        "2024893": [
+          124
+        ],
+        "2024894": [
+          58
+        ],
+        "2024895": [
+          86
+        ],
+        "2024896": [
+          52
+        ],
+        "2024897": [
+          114
+        ],
+        "2024898": [
+          48
+        ],
+        "2024899": [
+          14
+        ],
+        "2024900": [
+          76
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 16,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.32116468995809555,
+      "parallel_seconds": 0.22636802238412201,
+      "speedup": 1.4187723450316398,
+      "thread_affinities": {
+        "2024902": [
+          88
+        ],
+        "2024906": [
+          54
+        ],
+        "2024907": [
+          72
+        ],
+        "2024908": [
+          78
+        ],
+        "2024909": [
+          106
+        ],
+        "2024910": [
+          68
+        ],
+        "2024911": [
+          34
+        ],
+        "2024912": [
+          96
+        ],
+        "2024913": [
+          124
+        ],
+        "2024914": [
+          58
+        ],
+        "2024915": [
+          86
+        ],
+        "2024916": [
+          52
+        ],
+        "2024917": [
+          114
+        ],
+        "2024918": [
+          48
+        ],
+        "2024919": [
+          14
+        ],
+        "2024920": [
+          76
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 8,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.30660277255810797,
+      "parallel_seconds": 0.206384701654315,
+      "speedup": 1.4855886608865694,
+      "thread_affinities": {
+        "2024922": [
+          88
+        ],
+        "2024928": [
+          54
+        ],
+        "2024929": [
+          72
+        ],
+        "2024930": [
+          78
+        ],
+        "2024931": [
+          106
+        ],
+        "2024932": [
+          68
+        ],
+        "2024933": [
+          34
+        ],
+        "2024934": [
+          96
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 4,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.30794163420796394,
+      "parallel_seconds": 0.20306267472915351,
+      "speedup": 1.5164856595073357,
+      "thread_affinities": {
+        "2024935": [
+          88
+        ],
+        "2024939": [
+          54
+        ],
+        "2024940": [
+          72
+        ],
+        "2024941": [
+          78
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 2,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.30755744129419327,
+      "parallel_seconds": 0.20996510051190853,
+      "speedup": 1.4648026769417788,
+      "thread_affinities": {
+        "2024943": [
+          88
+        ],
+        "2024947": [
+          54
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "longest",
+      "threads": 1,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3115885257720947,
+      "parallel_seconds": 0.3110047900117934,
+      "speedup": 1.0018769349509993,
+      "thread_affinities": {
+        "2024949": [
+          88
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 1,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.321578057250008,
+      "parallel_seconds": 0.3175830403342843,
+      "speedup": 1.0125794403615462,
+      "thread_affinities": {
+        "2024953": [
+          88
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 2,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3088385204318911,
+      "parallel_seconds": 0.2111488259397447,
+      "speedup": 1.4626580046437196,
+      "thread_affinities": {
+        "2024960": [
+          88
+        ],
+        "2024963": [
+          54
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 4,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3230278885457665,
+      "parallel_seconds": 0.22487419308163226,
+      "speedup": 1.4364827022570044,
+      "thread_affinities": {
+        "2024965": [
+          88
+        ],
+        "2024968": [
+          54
+        ],
+        "2024969": [
+          72
+        ],
+        "2024970": [
+          78
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 8,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3090758677572012,
+      "parallel_seconds": 0.21910462202504277,
+      "speedup": 1.410631436710975,
+      "thread_affinities": {
+        "2024973": [
+          88
+        ],
+        "2024977": [
+          54
+        ],
+        "2024978": [
+          72
+        ],
+        "2024979": [
+          78
+        ],
+        "2024980": [
+          106
+        ],
+        "2024981": [
+          68
+        ],
+        "2024982": [
+          34
+        ],
+        "2024983": [
+          96
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 16,
+      "repeat": 0,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3078637644648552,
+      "parallel_seconds": 0.23291327734477818,
+      "speedup": 1.3217956828160073,
+      "thread_affinities": {
+        "2024984": [
+          88
+        ],
+        "2024988": [
+          54
+        ],
+        "2024989": [
+          72
+        ],
+        "2024990": [
+          78
+        ],
+        "2024991": [
+          106
+        ],
+        "2024992": [
+          68
+        ],
+        "2024993": [
+          34
+        ],
+        "2024994": [
+          96
+        ],
+        "2024995": [
+          124
+        ],
+        "2024996": [
+          58
+        ],
+        "2024997": [
+          86
+        ],
+        "2024998": [
+          52
+        ],
+        "2024999": [
+          114
+        ],
+        "2025000": [
+          48
+        ],
+        "2025001": [
+          14
+        ],
+        "2025002": [
+          76
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 16,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3075923027936369,
+      "parallel_seconds": 0.3527105844113976,
+      "speedup": 0.8720812938090476,
+      "thread_affinities": {
+        "2025004": [
+          88
+        ],
+        "2025008": [
+          54
+        ],
+        "2025009": [
+          72
+        ],
+        "2025010": [
+          78
+        ],
+        "2025011": [
+          106
+        ],
+        "2025012": [
+          68
+        ],
+        "2025013": [
+          34
+        ],
+        "2025014": [
+          96
+        ],
+        "2025015": [
+          124
+        ],
+        "2025016": [
+          58
+        ],
+        "2025017": [
+          86
+        ],
+        "2025018": [
+          52
+        ],
+        "2025019": [
+          114
+        ],
+        "2025020": [
+          48
+        ],
+        "2025021": [
+          14
+        ],
+        "2025022": [
+          76
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 8,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3080319182481617,
+      "parallel_seconds": 0.218069804366678,
+      "speedup": 1.4125381509959765,
+      "thread_affinities": {
+        "2025024": [
+          88
+        ],
+        "2025028": [
+          54
+        ],
+        "2025029": [
+          72
+        ],
+        "2025030": [
+          78
+        ],
+        "2025031": [
+          106
+        ],
+        "2025032": [
+          68
+        ],
+        "2025033": [
+          34
+        ],
+        "2025034": [
+          96
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 4,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.32640541275031865,
+      "parallel_seconds": 0.2249087488744408,
+      "speedup": 1.4512793049795503,
+      "thread_affinities": {
+        "2025035": [
+          88
+        ],
+        "2025039": [
+          54
+        ],
+        "2025040": [
+          72
+        ],
+        "2025041": [
+          78
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 2,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.3093424781691283,
+      "parallel_seconds": 0.21111035766080022,
+      "speedup": 1.465311705199049,
+      "thread_affinities": {
+        "2025044": [
+          88
+        ],
+        "2025047": [
+          54
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    },
+    {
+      "scene": "astra9",
+      "threads": 1,
+      "repeat": 1,
+      "exact": true,
+      "substeps": 1000,
+      "serial_seconds": 0.31292202859185636,
+      "parallel_seconds": 0.3110353455413133,
+      "speedup": 1.006065815598094,
+      "thread_affinities": {
+        "2025049": [
+          88
+        ]
+      },
+      "library_sha256": "fe1d7671dc4cf3c7a40d6442f7fa70141c1232a92da7435b48790726e81a82f1"
+    }
+  ]
+}

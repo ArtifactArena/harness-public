@@ -1,0 +1,15 @@
+{
+  "pair": [
+    "grok46_08",
+    "grok46_10"
+  ],
+  "steps": 500,
+  "exact_events": 1500,
+  "v1_seconds": 53.773933324962854,
+  "top32_seconds": 39.15737201273441,
+  "speedup": 1.373277382033579,
+  "v1_observation_seconds": 31.825145483016968,
+  "top32_observation_seconds": 17.092003328725696,
+  "cpus_per_match": 1,
+  "gpus_used": 0
+}

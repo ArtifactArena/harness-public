@@ -1,0 +1,16 @@
+# GPT-6 Astra — OpenAI GPT-6 family.
+# API id `openai/gpt-6-astra` verified live 2026-09-16 (Responses API, one-line probe
+# answered in 3 s with reasoning_effort=high).
+model: openai/gpt-6-astra
+model_type: responses
+# Responses API wire names (2026-09-17 fix): DSPy hands this yaml to litellm.responses(),
+# which only knows `reasoning.effort` and `max_output_tokens`; the chat-completions
+# spellings `reasoning_effort` / `max_tokens` were silently DROPPED, so every earlier run
+# went out at OpenAI's default effort with no output cap. tests/test_model_config_wire.py
+# asserts the body the provider receives.
+temperature: 1.0
+max_output_tokens: 128000  # OpenAI native max_output_tokens (same budget as gpt-5.5 / gpt-5.6)
+reasoning:
+  effort: high
+num_retries: 10   # ride through transient quota/rate flaps (kimi/minimax pattern);
+                  # exp backoff bridges ~10-20min outages instead of killing the run

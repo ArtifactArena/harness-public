@@ -1,0 +1,4 @@
+model: xai/grok-4.20-0309-reasoning
+temperature: 1.0
+max_tokens: 32000
+num_retries: 10  # transient DNS/network errors against api.x.ai

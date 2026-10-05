@@ -1,0 +1,8 @@
+............................                                             [100%]
+=============================== warnings summary ===============================
+../test-deps/_pytest/config/__init__.py:1290
+  <work-root>/match-parity-opt-20260924/test-deps/_pytest/config/__init__.py:1290: PytestAssertRewriteWarning: Module already imported so cannot be rewritten; anyio
+    self._mark_plugins_for_rewrite(hook, disable_autoload)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+28 passed, 1 warning in 87.91s (0:01:27)

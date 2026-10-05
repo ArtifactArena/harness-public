@@ -1,0 +1,16 @@
+from mjarena.design_shop.rules.mj_validators import ModelValidationConfig
+import importlib.util
+from pathlib import Path
+spec=importlib.util.spec_from_file_location('internal_actuation_checks',Path(__file__).parent/'support/internal_actuation_trace.py')
+checks=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(checks)
+test_transmission_rules=checks.check_transmission_rules
+test_runtime_rejects_preprocessed_root_motor=checks.check_runtime_rejects_preprocessed_root_motor
+
+test_jointinparent_mass_frame_and_observations=checks.check_jointinparent_mass_frame_and_observations
+test_ball_motor_velocities=checks.check_ball_motor_velocities
+
+test_internal_site_mechanisms=checks.check_internal_site_mechanisms
+test_site_external_anchors_rejected=checks.check_site_external_anchors_rejected
+
+test_site_match_observations=checks.check_site_match_observations

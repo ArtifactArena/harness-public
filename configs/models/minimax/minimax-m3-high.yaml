@@ -1,0 +1,14 @@
+# MiniMax M3 via Together — HIGH reasoning.
+# reasoning_effort passed via extra_body (Together rejects it as a top-level
+# param). Verified: extra_body.reasoning_effort=high returns reasoning_content.
+# max_tokens pinned (litellm has no model_info; null would raise).
+model: together_ai/MiniMaxAI/MiniMax-M3
+temperature: 1.0
+top_p: 0.95
+max_tokens: 98304         # 96K output budget — throttled from 512K (512K made each
+                          # high-reasoning generation take ~13min; 98K keeps pace
+                          # with GLM/Kimi and is ample for a bot-design trace)
+num_retries: 10           # transient 429/5xx flaps; per-call timeouts are unlimited now (was 1 when a
+                          # 600 s timeout made retries loop for ~100 min producing nothing)
+extra_body:
+  reasoning_effort: high

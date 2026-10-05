@@ -1,0 +1,57 @@
+[
+  {
+    "pair": "astra-gemini",
+    "reference_seconds": 499.8785378523171,
+    "native_seconds": 72.07550887018442,
+    "speedup": 6.935483990167186,
+    "events": 1500,
+    "steps": 500,
+    "complete_match": false,
+    "exact": true,
+    "first_mismatch": []
+  },
+  {
+    "pair": "codex53_10-grok45_10",
+    "reference_seconds": 281.3311137370765,
+    "native_seconds": 18.98876168578863,
+    "speedup": 14.815664043412973,
+    "events": 1500,
+    "steps": 500,
+    "complete_match": false,
+    "exact": true,
+    "first_mismatch": []
+  },
+  {
+    "pair": "gpt54_10-fable51_01",
+    "reference_seconds": 473.51817273534834,
+    "native_seconds": 16.906188156455755,
+    "speedup": 28.008571083750294,
+    "events": 1500,
+    "steps": 500,
+    "complete_match": false,
+    "exact": true,
+    "first_mismatch": []
+  },
+  {
+    "pair": "fable51_01-grok_10",
+    "reference_seconds": 363.94706334359944,
+    "native_seconds": 26.791539501398802,
+    "speedup": 13.584402767321286,
+    "events": 1500,
+    "steps": 500,
+    "complete_match": false,
+    "exact": true,
+    "first_mismatch": []
+  },
+  {
+    "pair": "fable51-opus",
+    "reference_seconds": 220.4586441963911,
+    "native_seconds": 13.632382351905107,
+    "speedup": 16.171688741225946,
+    "events": 2110,
+    "steps": 703,
+    "complete_match": true,
+    "exact": true,
+    "first_mismatch": []
+  }
+]

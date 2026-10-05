@@ -1,0 +1,24 @@
+<mujoco model="skyhook_bailiff_root_actuation_regression">
+  <worldbody>
+    <geom name="sumo_ring" type="cylinder" size="7.5 1" pos="0 0 -5" />
+    <body name="red_root">
+      <freejoint name="red_root_free" />
+      <geom name="red_chassis" type="box" size=".3 .3 .1" mass="100" />
+    </body>
+    <body name="blue_root" pos="3 0 0">
+      <freejoint />
+      <geom name="blue_block" type="box" size=".2 .2 .2" mass="36" />
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="red_thrust_1" joint="red_root_free" gear="0 4863.012787 7868.519977 0 0 0" ctrllimited="true" ctrlrange="-1 1" />
+    <motor name="red_thrust_2" joint="red_root_free" gear="0 -4863.012787 7868.519977 0 0 0" ctrllimited="true" ctrlrange="-1 1" />
+    <motor name="red_thrust_3" joint="red_root_free" gear="4863.012787 7868.519977 0 0 0 0" ctrllimited="true" ctrlrange="-1 1" />
+    <motor name="red_thrust_4" joint="red_root_free" gear="-4863.012787 7868.519977 0 0 0 0" ctrllimited="true" ctrlrange="-1 1" />
+    <motor name="red_thrust_5" joint="red_root_free" gear="7868.519977 0 4863.012787 0 0 0" ctrllimited="true" ctrlrange="-1 1" />
+    <motor name="red_thrust_6" joint="red_root_free" gear="7868.519977 0 -4863.012787 0 0 0" ctrllimited="true" ctrlrange="-1 1" />
+    <motor name="red_roll_wrench" joint="red_root_free" gear="0 0 0 2200 0 0" ctrllimited="true" ctrlrange="-1 1" />
+    <motor name="red_pitch_wrench" joint="red_root_free" gear="0 0 0 0 2200 0" ctrllimited="true" ctrlrange="-1 1" />
+    <motor name="red_yaw_wrench" joint="red_root_free" gear="0 0 0 0 0 2200" ctrllimited="true" ctrlrange="-1 1" />
+  </actuator>
+</mujoco>

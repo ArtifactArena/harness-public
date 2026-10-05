@@ -1,0 +1,23 @@
+<mujoco>
+  <worldbody>
+    <body name="root" pos="0 0 1">
+      <freejoint/>
+      <body name="arm" pos="0.3 0 0">
+        <joint name="hinge" axis="0 1 0"/>
+        <body name="arm_frame">
+          <body name="arm_shape" pos="0.1 0 0">
+            <geom name="tip" type="box" size="0.1 0.1 0.1" material="aluminum"/>
+          </body>
+        </body>
+      </body>
+      <body name="chassis_frame">
+        <geom name="chassis" type="box" size="0.2 0.2 0.1" material="aluminum"/>
+      </body>
+    </body>
+  </worldbody>
+  <tendon><fixed name="coupling"><joint joint="hinge" coef="1"/></fixed></tendon>
+  <actuator>
+    <motor name="drive" joint="hinge" gear="100"/>
+    <motor name="pull" tendon="coupling" gear="50"/>
+  </actuator>
+</mujoco>

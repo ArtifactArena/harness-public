@@ -1,0 +1,126 @@
+{
+  "workers": [
+    {
+      "pid": 2035981,
+      "cpus": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "affinity": {
+        "2035981": [
+          8
+        ],
+        "2036794": [
+          8
+        ],
+        "2036956": [
+          10
+        ],
+        "2036957": [
+          12
+        ],
+        "2036958": [
+          14
+        ],
+        "2036959": [
+          8
+        ]
+      },
+      "library": "<local>/artifactarena/iterative-cpu-parallel4-20260924/<job-3>/native/arena_onecore_v3.so"
+    },
+    {
+      "pid": 2035982,
+      "cpus": [
+        22,
+        30,
+        34,
+        38
+      ],
+      "affinity": {
+        "2035982": [
+          22
+        ],
+        "2036793": [
+          22
+        ],
+        "2036952": [
+          30
+        ],
+        "2036953": [
+          34
+        ],
+        "2036954": [
+          38
+        ],
+        "2036955": [
+          22
+        ]
+      },
+      "library": "<local>/artifactarena/iterative-cpu-parallel4-20260924/<job-3>/native/arena_onecore_v3.so"
+    },
+    {
+      "pid": 2035983,
+      "cpus": [
+        40,
+        42,
+        44,
+        46
+      ],
+      "affinity": {
+        "2035983": [
+          40
+        ],
+        "2036386": [
+          40
+        ],
+        "2036693": [
+          42
+        ],
+        "2036694": [
+          44
+        ],
+        "2036695": [
+          46
+        ],
+        "2036696": [
+          40
+        ]
+      },
+      "library": "<local>/artifactarena/iterative-cpu-parallel4-20260924/<job-3>/native/arena_onecore_v3.so"
+    },
+    {
+      "pid": 2035984,
+      "cpus": [
+        50,
+        62,
+        76,
+        82
+      ],
+      "affinity": {
+        "2035984": [
+          50
+        ],
+        "2036385": [
+          50
+        ],
+        "2036697": [
+          62
+        ],
+        "2036698": [
+          76
+        ],
+        "2036699": [
+          82
+        ],
+        "2036700": [
+          50
+        ]
+      },
+      "library": "<local>/artifactarena/iterative-cpu-parallel4-20260924/<job-3>/native/arena_onecore_v3.so"
+    }
+  ],
+  "sha256": "62d58f48e139e33d061359eba0cc869d13f033f61f5f647940a73b4bca3ff694",
+  "gpus_used": 0
+}

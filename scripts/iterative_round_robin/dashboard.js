@@ -1,0 +1,15 @@
+let length10Signature;
+function length10Leaderboard(){
+ const section=$('#length10-leaderboard'),board=snapshot.iterative_length10;if(!section)return;
+ if(!board?.round_robin){section.innerHTML='<h2>All 10-iteration runs · selected-bot tournament</h2><p class="muted">Preparing the frozen tournament roster…</p>';return}
+ const signature=JSON.stringify(board);if(signature===length10Signature)return;length10Signature=signature;
+ const done=board.completed_matches,total=board.total_matches,pct=total?100*done/total:0,complete=done===total;
+ const percent=v=>v==null?'—':`${(100*v).toFixed(1)}%`;
+ section.innerHTML=`<div class="leaderboard-heading"><div><div class="label">Iterative harness · one winner from every complete run</div><h2 id="length10-title">All 10-iteration runs · selected-bot tournament</h2></div><span class="leaderboard-status">${complete?'Final results':'Provisional rankings'}</span></div>
+ <p class="muted">${board.selected_runs} selected bots from ${board.models} models. Every run’s ten bots completed a 270-match selection tournament; the winner advances here. Each pair plays three seeds and both colors, with a 300-second simulation limit.</p>
+ <div class="leaderboard-progress"><strong>${done.toLocaleString()} / ${total.toLocaleString()} matches · ${pct.toFixed(1)}%</strong><span>${board.active_matches} running · ${board.queued_matches.toLocaleString()} queued · ${board.active_cpus} CPU cores · ${board.worker_hosts.length} hosts</span></div>
+ <div class="overall-track matches" role="progressbar" aria-label="All 10-iteration runs tournament" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${done}" aria-valuetext="${done} of ${total} matches completed"><div style="width:${pct}%"></div></div>
+ <p class="muted small">${board.reused_matches} compatible completed matches reused. Elo uses the existing Bradley–Terry method with a prior centered at 1000; draws count as half a win. Win rate = wins ÷ all completed matches. ${complete?'Every scheduled match has finished.':'Rankings remain provisional while opponents and match counts are uneven.'} <a href="/matches.html">View running matches →</a></p>
+ ${Object.keys(board.errors||{}).length?`<p class="leaderboard-error">${Object.keys(board.errors).length} matches need attention; errors are not counted as losses.</p>`:''}
+ <div class="leaderboard-table-scroll" tabindex="0" role="region" aria-label="All iterative runs Elo leaderboard"><table><thead><tr><th scope="col">Rank</th><th scope="col">Model / run / selected bot</th><th scope="col">Elo</th><th scope="col">Win rate</th><th scope="col">W / L / D</th><th scope="col">Matches</th></tr></thead><tbody>${board.round_robin.map(r=>`<tr><td>${r.rank??'—'}</td><td><strong>${esc(r.title)}</strong><span class="leaderboard-bot">Selected iteration ${r.revision} · ${esc(r.id)}</span></td><td class="leaderboard-number">${r.elo==null?'—':r.elo.toFixed(1)}</td><td>${percent(r.win_rate)}</td><td>${r.wins} / ${r.losses} / ${r.draws}</td><td>${r.completed} / ${r.total}</td></tr>`).join('')}</tbody></table></div>`;
+}
