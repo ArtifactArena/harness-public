@@ -147,7 +147,8 @@ networkx==3.4.2
 nodeenv==1.9.1
 notebook==7.4.7
 notebook_shim==0.2.4
-numpy>=2.0.0
+numpy==2.1.3
+threadpoolctl>=3.1.0
 omegaconf==2.3.0
 openai==2.14.0
 opencv-python==4.12.0.88

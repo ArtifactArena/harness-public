@@ -1602,6 +1602,12 @@ Examples:
     sys.stdout = _tee
     sys.stderr = _TeeWriter(log_path, stream=sys.stderr, file=_tee._file)
 
+    # Report the backend before expensive generation; required acceleration must
+    # fail here rather than turn a worker setup failure into a bot forfeiture.
+    from mjarena.runner.acceleration import match_acceleration
+    with match_acceleration():
+        pass
+
     # ── Phase 1: BUILD ───────────────────────────────────────────────────
     if not args.tournament_only:
         bots_by_iteration = run_build_phase(

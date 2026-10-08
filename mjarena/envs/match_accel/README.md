@@ -1,6 +1,12 @@
 # One CPU core per match
 
-This opt-in accelerator runs **one match process on one CPU core**. It does not
+The harness now enables this accelerator automatically around each `run_match`
+call when built; see [CPU acceleration setup](../../../README.md#cpu-acceleration-setup).
+The automatic path uses one simulation thread without changing process affinity,
+limits numeric thread pools during the match, and releases patches and native
+contexts afterward. `ARENA_MATCH_ACCEL=0` disables automatic activation.
+
+The explicit launcher below runs **one match process on one CPU core**. It does not
 start physics threads or surface worker processes and does not use a GPU. Run
 independent matches on separate allocated cores to preserve tournament throughput.
 

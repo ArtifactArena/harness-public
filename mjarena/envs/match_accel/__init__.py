@@ -19,7 +19,7 @@ class Accelerator:
     serialize to protect the process-wide MuJoCo collision dispatch table.
     """
 
-    def __init__(self, library, threads, interval):
+    def __init__(self, library, threads, interval, require_affinity=True):
         self.path = Path(library).resolve()
         self.threads = operator.index(threads)
         if self.threads not in (1, 4):
@@ -27,7 +27,9 @@ class Accelerator:
         if not hasattr(os, 'sched_getaffinity'):
             raise RuntimeError('The CPU accelerator requires Linux CPU affinity')
         allowed = os.sched_getaffinity(0)
-        if len(allowed) != self.threads:
+        if not require_affinity and self.threads != 1:
+            raise ValueError('Unpinned execution supports only the serial backend')
+        if require_affinity and len(allowed) != self.threads:
             raise RuntimeError('Pin the worker to exactly the requested number of CPUs')
         if self.threads == 4:
             topology = [Path(f'/sys/devices/system/cpu/cpu{cpu}/topology') for cpu in allowed]
@@ -35,7 +37,7 @@ class Accelerator:
                       p.joinpath('core_id').read_text().strip()) for p in topology}
             if len(cores) != 4 or len({c[0] for c in cores}) != 1:
                 raise RuntimeError('Four-core workers require distinct physical cores in one socket')
-        for task in Path('/proc/self/task').iterdir():
+        for task in Path('/proc/self/task').iterdir() if require_affinity else ():
             try:
                 if not os.sched_getaffinity(int(task.name)) <= allowed:
                     raise RuntimeError('Existing threads must be confined to the match CPUs')
@@ -239,12 +241,17 @@ class Accelerator:
         self.close()
 
 
-def install(library, threads=1, interval=True):
-    """Install once at process startup; returns a closable Accelerator handle."""
+def install(library, threads=1, interval=True, *, require_affinity=True):
+    """Return a closable Accelerator handle.
+
+    Explicit launchers enforce CPU affinity. The shared match runner may use
+    require_affinity=False for the serial backend only, while limiting numeric
+    thread pools and serializing complete matches at the Python entry point.
+    """
     global _INSTALLED
     if _INSTALLED is not None:
         if _INSTALLED.path != Path(library).resolve() or _INSTALLED.threads != threads:
             raise RuntimeError('Close the installed accelerator before changing its configuration')
         return _INSTALLED
-    _INSTALLED = Accelerator(library, threads, interval)
+    _INSTALLED = Accelerator(library, threads, interval, require_affinity=require_affinity)
     return _INSTALLED

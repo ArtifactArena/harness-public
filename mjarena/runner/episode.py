@@ -21,6 +21,7 @@ from mjarena.agents.runtime import BotRuntime
 from mjarena.agents.types import BotObservation
 from mjarena.design_shop.types import GameRecord
 from mjarena.runner.recording import VideoOverlayInfo, capture_frame, format_tqdm_bar, get_offscreen_writer
+from mjarena.runner.acceleration import accelerated_match
 
 # Setup logger
 logger = logging.getLogger(__name__)
@@ -1176,6 +1177,7 @@ class Match:
         return game_record
 
 
+@accelerated_match
 def run_match(
     composed_xml: Path,
     red_policy_py: Callable[[BotObservation], Mapping[str, float]],

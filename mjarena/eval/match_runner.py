@@ -281,7 +281,7 @@ def _run_seeds_in_processes(
 
     try:
         collected: Dict[int, Any] = {}
-        with ProcessPoolExecutor(max_workers=workers, mp_context=ctx, initializer=_worker_init) as pool:
+        with ProcessPoolExecutor(max_workers=workers, mp_context=ctx) as pool:
             futures = {
                 pool.submit(
                     _run_one_seed_process,
@@ -327,14 +327,6 @@ def _forward_process_progress(
         if event is None:
             return
         simulation_progress_listener(event)
-
-
-def _worker_init() -> None:
-    """Spawned seed workers start from a fresh interpreter: re-apply the opt-in observation
-    accelerator (ARENA_OBS_ACCEL=1) so every game in a run uses the same observer."""
-    if os.environ.get("ARENA_OBS_ACCEL") == "1":
-        from mjarena.envs.observation_accel import install
-        install()
 
 
 def _run_one_seed_process(
