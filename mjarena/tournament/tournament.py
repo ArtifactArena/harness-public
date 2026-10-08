@@ -35,6 +35,55 @@ from .types import MatchResult, MatchupResult, TournamentResult
 logger = logging.getLogger(__name__)
 
 
+def _resume_bot_order(bots, matches_dir):
+    """Recover original IDs when disk loading changes dictionary insertion order."""
+    slots = {}
+    positions = {}
+    for path in sorted(matches_dir.glob("*/match_result.json")):
+        try:
+            data = json.loads(path.read_text())
+        except (OSError, ValueError):
+            continue  # interrupted writes are replayed
+        if data.get("tool_name") != "tournament":
+            continue  # forfeit IDs can include bots excluded from simulation
+        for side in ("red", "blue"):
+            name, index = data.get(side + "_bot"), data.get(side + "_id")
+            if name not in bots or not isinstance(index, int) or not 0 <= index < len(bots):
+                raise ValueError(f"Saved tournament roster differs: {path}")
+            if (index in slots and slots[index] != name) or (name in positions and positions[name] != index):
+                raise ValueError(f"Conflicting saved tournament bot IDs: {path}")
+            slots[index] = name
+            positions[name] = index
+    remaining = iter(name for name in bots if name not in positions)
+    return [slots[i] if i in slots else next(remaining) for i in range(len(bots))]
+
+
+def _completed_matchup(path, name_a, name_b, seeds):
+    """Load only a complete pairing; partial seeds have no resumable checkpoint."""
+    try:
+        data = json.loads(path.read_text())
+        rows = data["matches"]
+        if (data["red_bot"] != name_a or data["blue_bot"] != name_b
+                or data["n_seeds"] != len(seeds)
+                or [r["seed"] for r in rows] != list(seeds)
+                or any(r["winner"] not in {"red", "blue", "tie"} for r in rows)):
+            return None
+        matches = [MatchResult(
+            red_bot=name_a, blue_bot=name_b, winner=r["winner"],
+            red_score=1.0 if r["winner"] == "red" else -1.0 if r["winner"] == "blue" else 0.0,
+            seed=r["seed"], steps=r["num_steps"],
+            details={"combat_metrics": r.get("combat_metrics") or {}},
+        ) for r in rows]
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+    return MatchupResult(
+        bot_a=name_a, bot_b=name_b, matches=matches,
+        wins_a=sum(m.winner == "red" for m in matches),
+        wins_b=sum(m.winner == "blue" for m in matches),
+        ties=sum(m.winner == "tie" for m in matches),
+    ), data
+
+
 def _trace(enabled: bool, message: str) -> None:
     """Emit a timestamped progress line immediately."""
     if not enabled:
@@ -92,12 +141,18 @@ def _render_dashboard(
     # "skipped" status appears when run_round_robin's resumability check finds
     # an existing match_result.json on disk (kill+restart resume from previous run).
     skipped_count = sum(1 for state in task_states.values() if state["status"] == "skipped")
+    finished_count = done_count + skipped_count
+    remaining_count = max(0, total_count - finished_count)
+    eta = (tournament_elapsed / done_count * remaining_count) if done_count else None
+    if remaining_count == 0:
+        eta = 0.0
 
     lines = [
-        f"[Dashboard] {_progress_bar(done_count, total_count)} {done_count}/{total_count} complete "
+        f"[Dashboard] {_progress_bar(finished_count, total_count)} {finished_count}/{total_count} finished "
         f"| running={running_count} queued={queued_count} completed={completed_count} "
         f"errors={error_count} skipped={skipped_count} "
-        f"| workers={workers} | elapsed={_format_elapsed(tournament_elapsed)}"
+        f"| workers={workers} | elapsed={_format_elapsed(tournament_elapsed)} "
+        f"| ETA={_format_elapsed(eta)}"
     ]
 
     headers = ("Idx", "Matchup", "Seeds", "Status", "Time", "Result")
@@ -470,6 +525,11 @@ def _run_single_matchup(
     matchup_seed_start = seed_base + idx * n_rollouts
     matchup_seeds = [matchup_seed_start + s for s in range(n_rollouts)]
 
+    cached = _completed_matchup(matchup_dir / "match_result.json", name_a, name_b, matchup_seeds)
+    if cached is not None:
+        _trace(trace_progress, f"[resume] {name_a} vs {name_b}: using completed matchup")
+        return idx, cached[0], cached[1]
+
     # Determine inactivity exemptions for stationary bots (e.g. box baseline)
     exempt_prefixes: Optional[List[str]] = None
     bot_a_obj = bots[name_a]
@@ -681,7 +741,7 @@ def run_round_robin(
         # Save only 1 video
         save_video_seeds = 1
 
-    bot_names = list(bots.keys())
+    bot_names = _resume_bot_order(bots, matches_dir)
     # Create bot_id mapping: use list index as ID
     bot_name_to_id = {name: idx for idx, name in enumerate(bot_names)}
 
@@ -762,15 +822,16 @@ def run_round_robin(
         task_states: Dict[int, Dict[str, Any]] = {}
         queued_indices: Deque[int] = deque()
 
-        # Resumability: skip matchups whose match_result.json already exists.
-        # Lets a kill+restart cycle naturally pick up where it left off (e.g.
-        # after a MuJoCo deadlock takes down a worker pool). Pair dir naming
-        # mirrors the convention in _run_single_matchup line 459.
+        # Use the same generator-based paths and completeness checks as workers.
+        # Retain cached matches in the aggregate standings and Elo calculation.
         preexisting_indices: set = set()
         for idx, (name_a, name_b) in enumerate(matchups):
-            pair_dir = matches_dir / f"{name_a}_vs_{name_b}"
-            if (pair_dir / "match_result.json").is_file():
+            pair_dir = matches_dir / f"{bots[name_a].generator}_vs_{bots[name_b].generator}"
+            seeds = range(seed_base + idx * n_rollouts, seed_base + (idx + 1) * n_rollouts)
+            cached = _completed_matchup(pair_dir / "match_result.json", name_a, name_b, seeds)
+            if cached is not None:
                 preexisting_indices.add(idx)
+                completed[idx] = (cached[0], None)
         if preexisting_indices and verbose:
             print(
                 f"[run_round_robin] resumability: {len(preexisting_indices)}/{num_matchups} "

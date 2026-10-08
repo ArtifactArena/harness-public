@@ -188,6 +188,22 @@ and one matchup at a time. `--no-video` avoids tournament rendering overhead;
 `tournament.n_parallel_tournament` controls concurrent matchups. Passing the same
 model YAML twice produces one model entry, not two independently generated bots.
 
+To resume an interrupted run without generating bots again:
+
+```bash
+ARENA_MATCH_ACCEL=1 python run_baseline_agent.py \
+  --continue logs/test_season --tournament-only --iterations 1 --no-video --no-trace
+```
+
+Completed pairings are reused, including their original bot order and seeds.
+An interrupted pairing restarts all its seeds; mid-match physics state is not
+checkpointed. Keep the saved match rules and seed count when resuming. In a
+terminal, serial matches show a live step bar, elapsed time, and ETA to the match
+limit (matches can finish early). Redraws are not saved to `log.txt`. Parallel
+matchups use the coordinator dashboard with a throughput-based ETA, which appears
+after the first new pairing finishes. `ARENA_PROGRESS=0` hides the serial bar;
+`ARENA_PROGRESS=1` forces it when output is redirected.
+
 ## Run a Match
 
 Without `--config` (or an explicit `--inactivity-timeout`), the inactivity rule is off

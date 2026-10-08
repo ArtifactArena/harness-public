@@ -22,6 +22,7 @@ from mjarena.agents.types import BotObservation
 from mjarena.design_shop.types import GameRecord
 from mjarena.runner.recording import VideoOverlayInfo, capture_frame, format_tqdm_bar, get_offscreen_writer
 from mjarena.runner.acceleration import accelerated_match
+from mjarena.runner.progress import match_progress_options
 
 # Setup logger
 logger = logging.getLogger(__name__)
@@ -904,8 +905,9 @@ class Match:
             self._render_frame(mjrenderer, writer, camera_mode, overlay_info)
             _trace(f"{trace_label or 'match'}: initial render done", enabled=trace_enabled)
         
-        # set tqdm display (Gladiator Arena 1v1)
-        tqdm_kwargs = {"desc": "Gladiator Arena 1v1", "leave": True} if verbose else {"disable": quiet}
+        # Tournament runners suppress verbose match output, but a serial match
+        # still needs a live terminal bar rather than ten sparse heartbeats.
+        tqdm_kwargs = match_progress_options(self.seed, trace_label)
 
         try:
             # if GUI mode, run until the window is closed
