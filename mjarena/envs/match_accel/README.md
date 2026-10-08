@@ -1,7 +1,7 @@
 # One CPU core per match
 
 The harness now enables this accelerator automatically around each `run_match`
-call when built; see [CPU acceleration setup](../../../README.md#cpu-acceleration-setup).
+call when built; see [First-Time Setup](../../../README.md#first-time-setup).
 The automatic path uses one simulation thread without changing process affinity,
 limits numeric thread pools during the match, and releases patches and native
 contexts afterward. `ARENA_MATCH_ACCEL=0` disables automatic activation.
@@ -15,6 +15,32 @@ iterations, contact order, solver, seeds, and scoring remain unchanged. Fast-mat
 and floating-point contraction are disabled. The 10× single-core target has not
 been established; see `RESULTS.md` for measured results. The earlier 80-core
 experiment is historical and does not meet the requirement.
+
+## Automatic activation
+
+The standard setup script builds the native library and Cython extensions:
+
+```sh
+python scripts/setup_acceleration.py
+```
+
+Pass `--mujoco-source /path/to/mujoco-3.10.0` for offline setup, or
+`--ispc /path/to/ispc-1.31.0/bin/ispc` for the optional AVX-512 backend.
+Build on the target machine with matches stopped; rebuild after changing Python,
+dependencies, or accelerator sources. Keep the generated JSON manifest beside
+`mjarena/envs/match_accel/arena_serial.so`.
+
+The default `ARENA_MATCH_ACCEL=auto` mode reports the selected backend and falls
+back to Cython observations or the reference implementation if native acceleration
+is unavailable. `ARENA_MATCH_ACCEL=1` requires the native backend;
+`ARENA_MATCH_ACCEL=0` disables automatic activation. Set
+`ARENA_MATCH_ACCEL_LIBRARY=/absolute/path/arena_serial.so` to select another build.
+Explicit installations remain under their launcher's control.
+
+Automatic activation covers qualification, serial tournaments, process workers,
+and the episode viewer. Loaded numeric thread pools are limited to one during a
+match and restored afterward. Threaded matches in one process serialize because
+MuJoCo's collider dispatch is global; use process workers for throughput.
 
 ## Build
 

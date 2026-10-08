@@ -123,6 +123,7 @@ python run_baseline_agent.py --config configs/tournaments/arh-smoke.yaml \
 
 Notes:
 
+- Matches use acceleration by default after setup; no run flag is needed.
 - `base.yaml` plays 5 seeds per match (`n_rollouts: 5`) with 300 s rounds;
   `--n-rollouts 1` plays one. With several seeds, videos are written as
   `seed_<N>.mp4` next to `--video-path`.
@@ -132,77 +133,6 @@ Notes:
   100-minute timeout and is retried on failure.
 - The commit budget has no command-line flag and configs inherit only one level of
   `base:`, so step 5 copies `arh.yaml` with a smaller budget.
-
-## CPU acceleration setup
-
-Matches automatically use the exact native CPU and Cython observation accelerators
-when their compiled libraries are available. This covers qualification, serial
-tournaments, parallel matchup/seed workers, and the episode viewer. No acceleration
-flag or wrapper is needed for `run_baseline_agent.py`.
-
-On Linux x86-64, use Python 3.10 and the pinned requirements (NumPy 2.1.3 with its
-wheel's scipy-openblas 0.3.27 ILP64 backend, MuJoCo 3.10.0), then build once per
-checkout/environment on the machine that will run matches:
-
-```bash
-pip install -r pip_requirements.txt
-pip install 'Cython==3.1.4'
-python scripts/setup_acceleration.py
-```
-
-The setup requires `gcc` and Python development headers. It downloads the official
-MuJoCo 3.10.0 source archive and verifies the native builder's pinned source hashes.
-For offline setup, pass `--mujoco-source /path/to/mujoco-3.10.0`. On an AVX-512 CPU,
-add `--ispc /path/to/ispc-1.31.0/bin/ispc` to enable the optional SIMD backend;
-otherwise the exact scalar native backend is built. Keep the generated `.json`
-manifest beside `mjarena/envs/match_accel/arena_serial.so`. Rebuild after changing
-Python/dependencies or acceleration sources, with matches stopped. Builds use
-`-march=native`; do not copy them to a different CPU without rebuilding.
-
-Each process logs its selected backend. Expect `Match acceleration: native +
-Cython observations`. If a build is missing or incompatible, the default `auto`
-mode warns and falls back to Cython observations or the reference implementation.
-Unsupported platforms use the reference implementation. To require the native
-backend, or deliberately use the reference path in a fresh process:
-
-```bash
-ARENA_MATCH_ACCEL=1 python run_baseline_agent.py ...  # require native acceleration
-ARENA_MATCH_ACCEL=0 python run_baseline_agent.py ...  # disable automatic acceleration
-```
-
-`ARENA_MATCH_ACCEL_LIBRARY=/absolute/path/arena_serial.so` selects a custom native
-build. Explicit installations by specialized accelerator launchers remain under
-those launchers' control. `ARENA_OBS_ACCEL=1` alone is no longer needed.
-
-The automatic runner uses one simulation thread and limits loaded numeric thread
-pools to one during each match, restoring them afterward. It preserves CPU affinity
-so parallel child matches can use the scheduler's allowed CPUs. Matches submitted
-as threads in one process serialize because MuJoCo's collider dispatch is global;
-use process workers for throughput. Physics timesteps, seeds, observations, scoring,
-and match durations are unchanged. See the [native backend](mjarena/envs/match_accel/README.md)
-for implementation and numerical validation details.
-
-Acceleration does not reduce the tournament's workload: `sh.yaml` inherits five
-seeds, 300 simulated seconds per match, seven baseline bots, videos for every seed,
-and one matchup at a time. `--no-video` avoids tournament rendering overhead;
-`tournament.n_parallel_tournament` controls concurrent matchups. Passing the same
-model YAML twice produces one model entry, not two independently generated bots.
-
-To resume an interrupted run without generating bots again:
-
-```bash
-ARENA_MATCH_ACCEL=1 python run_baseline_agent.py \
-  --continue logs/test_season --tournament-only --iterations 1 --no-video --no-trace
-```
-
-Completed pairings are reused, including their original bot order and seeds.
-An interrupted pairing restarts all its seeds; mid-match physics state is not
-checkpointed. Keep the saved match rules and seed count when resuming. In a
-terminal, serial matches show a live step bar, elapsed time, and ETA to the match
-limit (matches can finish early). Redraws are not saved to `log.txt`. Parallel
-matchups use the coordinator dashboard with a throughput-based ETA, which appears
-after the first new pairing finishes. `ARENA_PROGRESS=0` hides the serial bar;
-`ARENA_PROGRESS=1` forces it when output is redirected.
 
 ## Run a Match
 
@@ -312,6 +242,22 @@ python run_baseline_agent.py --config configs/tournaments/arh.yaml \
   --output-dir runs/gemini-vgh
 ```
 
+To resume an interrupted run without generating bots again:
+
+```bash
+python run_baseline_agent.py \
+  --continue logs/test_season --tournament-only --iterations 1 --no-video --no-trace
+```
+
+Completed pairings are reused, including their original bot order and seeds.
+An interrupted pairing restarts all its seeds; mid-match physics state is not
+checkpointed. Keep the saved match rules and seed count when resuming. In a
+terminal, serial matches show a live step bar, elapsed time, and ETA to the match
+limit (matches can finish early). Redraws are not saved to `log.txt`. Parallel
+matchups use the coordinator dashboard with a throughput-based ETA, which appears
+after the first new pairing finishes. `ARENA_PROGRESS=0` hides the serial bar;
+`ARENA_PROGRESS=1` forces it when output is redirected.
+
 ## Configs
 
 | File | Purpose |
@@ -352,7 +298,7 @@ Every model call has a 100-minute timeout; a hung connection is aborted and retr
 | `scripts/calculate_elo.py <season_dir> --build-stats` | Bradley–Terry Elo for a season's matches, written to `<season>/elo/elo_results.json` |
 | `scripts/sampling/` | The 250-sample Sampling Harness study: launching the pool, round robins, finals, validation and cost reports |
 | `scripts/two_stage/` | Round-robin tournaments over saved artifacts, cross-harness round robins, Elo and plots |
-| `scripts/match_accel/`, `scripts/observation_accel/` | Build, validate and benchmark the optional compiled accelerators |
+| `scripts/match_accel/`, `scripts/observation_accel/` | Build, validate and benchmark the compiled accelerators |
 | `scripts/sampling/cluster/`, `scripts/iterative_runs/`, `scripts/iterative_round_robin/`, `scripts/iterative_cpu/`, `scripts/live_matches/`, `scripts/tool_use_dashboard/` | The distributed runs, round robins and dashboards behind the paper's tournament |
 
 The scripts in the last row ran on our compute cluster; they keep its directory layout

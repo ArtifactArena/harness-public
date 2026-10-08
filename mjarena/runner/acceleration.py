@@ -90,10 +90,10 @@ def match_acceleration():
                     install()
                 except Exception as obs_exc:
                     _report("reference", f"{reason}; observations: {obs_exc}. "
-                            "See README.md: CPU acceleration setup")
+                            "See README.md: First-Time Setup")
                 else:
                     _report("Cython observations only", f"native unavailable: {reason}. "
-                            "See README.md: CPU acceleration setup")
+                            "See README.md: First-Time Setup")
             else:
                 _report("native + Cython observations", str(library))
             yield
